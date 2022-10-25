@@ -1,0 +1,74 @@
+body {
+    background: rgba(77, 75, 75, 1);
+}
+
+header {
+    background-color: rgba(240, 244, 23, 1);
+    
+
+}
+.contenido{
+    margin-left:40px;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgba(226, 17, 17, 1);
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 1);
+  
+
+}
+
+h2 {
+    font-size: 24px;
+    color: rgba(181, 17, 17, 1);
+    
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-evenly;
+}
+.encabezado2{
+    display: flex;
+    justify-content:center;
+}
+
+
+.togepi {
+    
+}
+
+.mewtoo {
+ 
+}
+.pikachu{
+    
+}
+#filtro{
+    font-size: 20px;
+    border-radius:20px;
+    background-color:rgba(146, 144, 215, 0.897);
+    text-align: center;
+}
+.filter{
+    display: flex;
+    flex:content;
+}
+::placeholder{
+    color:black ;
+}
+
+
+h3{
+    font-size:25px; 
+    color:rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 1); ;
+}
+.redes {
+    
+}
+h4{
+    color:rgb(255, 253, 253);
+    font-size:20px;
+}
