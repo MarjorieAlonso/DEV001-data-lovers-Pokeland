@@ -6,8 +6,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1> Bienvenidos a Pokeland</h1>
-    <div id="root"></div>
+    <header>
+ <section> 
+  <div class="encabezado"><img  class = "togepi" src = "imagenes/Imagen_de_WhatsApp_2-removebg-preview.png" width="200px" height="200px"/>
+      <h1> Bienvenidos a Pokeland</h1>
+      <img  class = "mewtoo" src = "imagenes/Imagen_de_WhatsApp_2022-10-24_a_las_12.53.15-removebg-preview.png" width="200px" height="200px"/> 
+    </div> 
+ <div class="encabezado2"> <h2>Tu sitio para conocer tus pokemones favoritos</h2></div></section>
+
+
+  </header>
+  <main class="contenido"> 
+  <div> <aside > <h3>Filtrar</h3>
+ 
+    <select id = "filtro" >
+      <option value="alfabetico1" id = "az">A-Z</opcion>
+      <option value="alfabetico2" id ="za">Z-A</option>
+      <option value="orden1" id = "ascendente">Orden Ascendente</option>
+      <option value="orden2" id = "descendente">Orden Descendente</option>
+      <option value="orden3" id = "region">Region</option>
+      </select>
+   
+  </aside> </main> </div>
+  <div class="search" autocomplete="on">
+    <input type="search"  class= "filter" id = "filtro" placeholder="Buscar pokemon">
+    <img  class="pikachu" src="imagenes/Imagen_de_WhatsApp_3-removebg-preview.png" width="75px" height="100px"/></div>
+ <footer>
+  <img  class="redes" src="imagenes/imagen_footer-removebg-preview.png" width="500px" height="100px">
+   <h4>2022 Pokemon. @1995-2022 Nintendo/Creatures Inc./GAME FREAK inc. TM, @Nintendo.By: Mayo & Romi</h4>
+  </footer>
+  <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>
