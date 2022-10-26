@@ -1,14 +1,16 @@
 body {
-    background: rgba(77, 75, 75, 1);
+    background: rgba(77, 75, 75, 0.685);
 }
 
 header {
-    background-color: rgba(240, 244, 23, 1);
+    background-color: rgb(237, 239, 87);
 }
 
 .contenido {
     margin-left: 40px;
     margin-right: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -25,7 +27,8 @@ h2 {
 h3 {
     font-size: 25px;
     color: rgba(255, 255, 255, 1);
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1.4px rgb(0, 0, 0);
+    margin-top: 20px;
 }
 
 h4 {
@@ -49,8 +52,11 @@ h4 {
     font-size: 20px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    height: 30px;
     text-align: center;
+    margin-top: 25px;
+    
 
 }
 
@@ -60,22 +66,44 @@ h4 {
     height: 30px;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    color: rgba(3, 3, 3, 0.542);
 }
-
 ::placeholder {
-    color: black;
+    color: rgba(78, 78, 78, 0.61);
+    text-align: center;
+
 }
 
 footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 1000px;
+    margin-top: 300px;
 }
 
 #root {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(10, 46, 10);
-
-
+    display: flex;
+    flex-direction: column;
+   
+}
+#a{
+    margin-top: 120px;
+    border: ridge 10px rgb(86, 84, 84);
+    height: 280px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background: green;
+}
+#b{
+   margin-top: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 8px grey;
+    
+}
+li{
+    list-style: none;
 }
