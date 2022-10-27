@@ -5,7 +5,7 @@ import data from './data/pokemon/pokemon.js';
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
-console.log("pokemon", pokemon);
+/*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
 
 const drawCard = (pokemon) => {
