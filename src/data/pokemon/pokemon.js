@@ -1,7 +1,7 @@
 export default {
   "pokemon": [{
     "num": "001",
-    "name": "bulbasaur",
+    "name": "Bulbasaur",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -99,7 +99,7 @@ export default {
   },
   {
     "num": "002",
-    "name": "ivysaur",
+    "name": "Ivysaur",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -197,7 +197,7 @@ export default {
   },
   {
     "num": "003",
-    "name": "venusaur",
+    "name": "Venusaur",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -295,7 +295,7 @@ export default {
   },
   {
     "num": "004",
-    "name": "charmander",
+    "name": "Charmander",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -391,7 +391,7 @@ export default {
   },
   {
     "num": "005",
-    "name": "charmeleon",
+    "name": "Charmeleon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -494,7 +494,7 @@ export default {
   },
   {
     "num": "006",
-    "name": "charizard",
+    "name": "Charizard",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -612,7 +612,7 @@ export default {
   },
   {
     "num": "007",
-    "name": "squirtle",
+    "name": "Squirtle",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -706,7 +706,7 @@ export default {
   },
   {
     "num": "008",
-    "name": "wartortle",
+    "name": "Wartortle",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -800,7 +800,7 @@ export default {
   },
   {
     "num": "009",
-    "name": "blastoise",
+    "name": "Blastoise",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -894,7 +894,7 @@ export default {
   },
   {
     "num": "010",
-    "name": "caterpie",
+    "name": "Caterpie",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -973,7 +973,7 @@ export default {
   },
   {
     "num": "011",
-    "name": "metapod",
+    "name": "Metapod",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1052,7 +1052,7 @@ export default {
   },
   {
     "num": "012",
-    "name": "butterfree",
+    "name": "Butterfree",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1157,7 +1157,7 @@ export default {
   },
   {
     "num": "013",
-    "name": "weedle",
+    "name": "Weedle",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1240,7 +1240,7 @@ export default {
   },
   {
     "num": "014",
-    "name": "kakuna",
+    "name": "Kakuna",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1323,7 +1323,7 @@ export default {
   },
   {
     "num": "015",
-    "name": "beedrill",
+    "name": "Beedrill",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1428,7 +1428,7 @@ export default {
   },
   {
     "num": "016",
-    "name": "pidgey",
+    "name": "Pidgey",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1523,7 +1523,7 @@ export default {
   },
   {
     "num": "017",
-    "name": "pidgeotto",
+    "name": "Pidgeotto",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1618,7 +1618,7 @@ export default {
   },
   {
     "num": "018",
-    "name": "pidgeot",
+    "name": "Pidgeot",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1727,7 +1727,7 @@ export default {
   },
   {
     "num": "019",
-    "name": "rattata",
+    "name": Rattata",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1812,7 +1812,7 @@ export default {
   },
   {
     "num": "020",
-    "name": "raticate",
+    "name": "Raticate",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1897,7 +1897,7 @@ export default {
   },
   {
     "num": "021",
-    "name": "spearow",
+    "name": "Spearow",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -1994,7 +1994,7 @@ export default {
   },
   {
     "num": "022",
-    "name": "fearow",
+    "name": "Fearow",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2091,7 +2091,7 @@ export default {
   },
   {
     "num": "023",
-    "name": "ekans",
+    "name": "Ekans",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2188,7 +2188,7 @@ export default {
   },
   {
     "num": "024",
-    "name": "arbok",
+    "name": "Arbok",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2278,7 +2278,7 @@ export default {
   },
   {
     "num": "025",
-    "name": "pikachu",
+    "name": "Pikachu",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2377,7 +2377,7 @@ export default {
   },
   {
     "num": "026",
-    "name": "raichu",
+    "name": "Raichu",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2483,7 +2483,7 @@ export default {
   },
   {
     "num": "027",
-    "name": "sandshrew",
+    "name": "Sandshrew",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2579,7 +2579,7 @@ export default {
   },
   {
     "num": "028",
-    "name": "sandslash",
+    "name": "Sandslash",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2668,7 +2668,7 @@ export default {
   },
   {
     "num": "029",
-    "name": "nidoran ♀ (female)",
+    "name": "Nidoran ♀ (female)",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2763,7 +2763,7 @@ export default {
   },
   {
     "num": "030",
-    "name": "nidorina",
+    "name": "Nidorina",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2858,7 +2858,7 @@ export default {
   },
   {
     "num": "031",
-    "name": "nidoqueen",
+    "name": "Nidoqueen",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -2956,7 +2956,7 @@ export default {
   },
   {
     "num": "032",
-    "name": "nidoran ♂ (male)",
+    "name": "Nidoran ♂ (male)",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3051,7 +3051,7 @@ export default {
   },
   {
     "num": "033",
-    "name": "nidorino",
+    "name": "Nidorino",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3146,7 +3146,7 @@ export default {
   },
   {
     "num": "034",
-    "name": "nidoking",
+    "name": "Nidoking",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3251,7 +3251,7 @@ export default {
   },
   {
     "num": "035",
-    "name": "clefairy",
+    "name": "Clefairy",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3344,7 +3344,7 @@ export default {
   },
   {
     "num": "036",
-    "name": "clefable",
+    "name": "Clefable",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3444,7 +3444,7 @@ export default {
   },
   {
     "num": "037",
-    "name": "vulpix",
+    "name": "Vulpix",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3535,7 +3535,7 @@ export default {
   },
   {
     "num": "038",
-    "name": "ninetales",
+    "name": "Ninetales",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3647,7 +3647,7 @@ export default {
   },
   {
     "num": "039",
-    "name": "jigglypuff",
+    "name": "Jigglypuff",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3754,7 +3754,7 @@ export default {
   },
   {
     "num": "040",
-    "name": "wigglytuff",
+    "name": "Wigglytuff",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3847,7 +3847,7 @@ export default {
   },
   {
     "num": "041",
-    "name": "zubat",
+    "name": "Zubat",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -3952,7 +3952,7 @@ export default {
   },
   {
     "num": "042",
-    "name": "golbat",
+    "name": "Golbat",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4056,7 +4056,7 @@ export default {
   },
   {
     "num": "043",
-    "name": "oddish",
+    "name": "Oddish",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4165,7 +4165,7 @@ export default {
   },
   {
     "num": "044",
-    "name": "gloom",
+    "name": "Gloom",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4267,7 +4267,7 @@ export default {
       ],
       "prev-evolution": [{
         "num": "043",
-        "name": "oddish",
+        "name": "Oddish",
         "candy-cost": "25"
       }]
     }
@@ -4372,7 +4372,7 @@ export default {
   },
   {
     "num": "046",
-    "name": "paras",
+    "name": "Paras",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4467,7 +4467,7 @@ export default {
   },
   {
     "num": "047",
-    "name": "parasect",
+    "name": "Parasect",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4569,7 +4569,7 @@ export default {
   },
   {
     "num": "048",
-    "name": "venonat",
+    "name": "Venonat",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4662,7 +4662,7 @@ export default {
   },
   {
     "num": "049",
-    "name": "venomoth",
+    "name": "Venomoth",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4769,7 +4769,7 @@ export default {
   },
   {
     "num": "050",
-    "name": "diglett",
+    "name": "Diglett",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4865,7 +4865,7 @@ export default {
   },
   {
     "num": "051",
-    "name": "dugtrio",
+    "name": "Dugtrio",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -4961,7 +4961,7 @@ export default {
   },
   {
     "num": "052",
-    "name": "meowth",
+    "name": "Meowth",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5053,7 +5053,7 @@ export default {
   },
   {
     "num": "053",
-    "name": "persian",
+    "name": "Persian",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5145,7 +5145,7 @@ export default {
   },
   {
     "num": "054",
-    "name": "psyduck",
+    "name": "Psyduck",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5234,7 +5234,7 @@ export default {
   },
   {
     "num": "055",
-    "name": "golduck",
+    "name": "Golduck",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5323,7 +5323,7 @@ export default {
   },
   {
     "num": "056",
-    "name": "mankey",
+    "name": "Mankey",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5412,7 +5412,7 @@ export default {
   },
   {
     "num": "057",
-    "name": "primeape",
+    "name": "Primeape",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5515,7 +5515,7 @@ export default {
   },
   {
     "num": "058",
-    "name": "growlithe",
+    "name": "Growlithe",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5606,7 +5606,7 @@ export default {
   },
   {
     "num": "059",
-    "name": "arcanine",
+    "name": "Arcanine",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5718,7 +5718,7 @@ export default {
   },
   {
     "num": "060",
-    "name": "poliwag",
+    "name": "Poliwag",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5823,7 +5823,7 @@ export default {
   },
   {
     "num": "061",
-    "name": "poliwhirl",
+    "name": "Poliwhirl",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -5918,7 +5918,7 @@ export default {
         },
         {
           "num": "186",
-          "name": "politoed",
+          "name": "Politoed",
           "candy-cost": "100",
           "evolution-item": {
             "name": "kings rock",
@@ -6048,7 +6048,7 @@ export default {
   },
   {
     "num": "063",
-    "name": "abra",
+    "name": "Abra",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6234,7 +6234,7 @@ export default {
   },
   {
     "num": "065",
-    "name": "alakazam",
+    "name": "Alakazam",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6341,7 +6341,7 @@ export default {
   },
   {
     "num": "066",
-    "name": "machop",
+    "name": "Machop",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6442,7 +6442,7 @@ export default {
   },
   {
     "num": "067",
-    "name": "machoke",
+    "name": "Machoke",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6543,7 +6543,7 @@ export default {
   },
   {
     "num": "068",
-    "name": "machamp",
+    "name": "Machamp",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6665,7 +6665,7 @@ export default {
   },
   {
     "num": "069",
-    "name": "bellsprout",
+    "name": "Bellsprout",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6763,7 +6763,7 @@ export default {
   },
   {
     "num": "070",
-    "name": "weepinbell",
+    "name": "Weepinbell",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -6861,7 +6861,7 @@ export default {
       }],
       "prev-evolution": [{
         "num": "069",
-        "name": "bellsprout",
+        "name": "Bellsprout",
         "candy-cost": "25"
       }]
     }
@@ -6966,7 +6966,7 @@ export default {
   },
   {
     "num": "072",
-    "name": "tentacool",
+    "name": "Tentacool",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7058,7 +7058,7 @@ export default {
   },
   {
     "num": "073",
-    "name": "tentacruel",
+    "name": "Tentacruel",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7150,7 +7150,7 @@ export default {
   },
   {
     "num": "074",
-    "name": "geodude",
+    "name": "Geodude",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7250,7 +7250,7 @@ export default {
   },
   {
     "num": "075",
-    "name": "graveler",
+    "name": "Graveler",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7364,7 +7364,7 @@ export default {
   },
   {
     "num": "076",
-    "name": "golem",
+    "name": "Golem",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7478,7 +7478,7 @@ export default {
   },
   {
     "num": "077",
-    "name": "ponyta",
+    "name": "Ponyta",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7576,7 +7576,7 @@ export default {
   },
   {
     "num": "078",
-    "name": "rapidash",
+    "name": "Rapidash",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7674,7 +7674,7 @@ export default {
   },
   {
     "num": "079",
-    "name": "slowpoke",
+    "name": "Slowpoke",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7767,7 +7767,7 @@ export default {
         },
         {
           "num": "199",
-          "name": "slowking",
+          "name": "Slowking",
           "candy-cost": "50",
           "evolution-item": {
             "name": "kings rock",
@@ -7873,7 +7873,7 @@ export default {
   },
   {
     "num": "081",
-    "name": "magnemite",
+    "name": "Magnemite",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -7964,7 +7964,7 @@ export default {
   },
   {
     "num": "082",
-    "name": "magneton",
+    "name": "Magneton",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8069,7 +8069,7 @@ export default {
   },
   {
     "num": "083",
-    "name": "farfetch'd",
+    "name": "Farfetch'd",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8162,7 +8162,7 @@ export default {
   },
   {
     "num": "084",
-    "name": "doduo",
+    "name": "Doduo",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8259,7 +8259,7 @@ export default {
   },
   {
     "num": "085",
-    "name": "dodrio",
+    "name": "Dodrio",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8356,7 +8356,7 @@ export default {
   },
   {
     "num": "086",
-    "name": "seel",
+    "name": "Seel",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8459,7 +8459,7 @@ export default {
   },
   {
     "num": "087",
-    "name": "dewgong",
+    "name": "Dewgong",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8570,7 +8570,7 @@ export default {
   },
   {
     "num": "088",
-    "name": "grimer",
+    "name": "Grimer",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8667,7 +8667,7 @@ export default {
   },
   {
     "num": "089",
-    "name": "muk",
+    "name": "Muk",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8771,7 +8771,7 @@ export default {
   },
   {
     "num": "090",
-    "name": "shellder",
+    "name": "Shellder",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8860,7 +8860,7 @@ export default {
   },
   {
     "num": "091",
-    "name": "cloyster",
+    "name": "Cloyster",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -8964,7 +8964,7 @@ export default {
   },
   {
     "num": "092",
-    "name": "gastly",
+    "name": "Gastly",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9076,7 +9076,7 @@ export default {
   },
   {
     "num": "093",
-    "name": "haunter",
+    "name": "Haunter",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9188,7 +9188,7 @@ export default {
   },
   {
     "num": "094",
-    "name": "gengar",
+    "name": "Gengar",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9307,7 +9307,7 @@ export default {
   },
   {
     "num": "095",
-    "name": "onix",
+    "name": "Onix",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9420,7 +9420,7 @@ export default {
   },
   {
     "num": "096",
-    "name": "drowzee",
+    "name": "Drowzee",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9508,7 +9508,7 @@ export default {
   },
   {
     "num": "097",
-    "name": "hypno",
+    "name": "Hypno",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9610,7 +9610,7 @@ export default {
   },
   {
     "num": "098",
-    "name": "krabby",
+    "name": "Krabby",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9699,7 +9699,7 @@ export default {
   },
   {
     "num": "099",
-    "name": "kingler",
+    "name": "Kingler",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9795,7 +9795,7 @@ export default {
   },
   {
     "num": "100",
-    "name": "voltorb",
+    "name": "Voltorb",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9889,7 +9889,7 @@ export default {
   },
   {
     "num": "101",
-    "name": "electrode",
+    "name": "Electrode",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -9983,7 +9983,7 @@ export default {
   },
   {
     "num": "102",
-    "name": "exeggcute",
+    "name": "Exeggcute",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10079,7 +10079,7 @@ export default {
   },
   {
     "num": "103",
-    "name": "exeggutor",
+    "name": "Exeggutor",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10189,7 +10189,7 @@ export default {
   },
   {
     "num": "104",
-    "name": "cubone",
+    "name": "Cubone",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10278,7 +10278,7 @@ export default {
   },
   {
     "num": "105",
-    "name": "marowak",
+    "name": "Marowak",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10367,7 +10367,7 @@ export default {
   },
   {
     "num": "106",
-    "name": "hitmonlee",
+    "name": "Hitmonlee",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10470,7 +10470,7 @@ export default {
   },
   {
     "num": "107",
-    "name": "hitmonchan",
+    "name": "Hitmonchan",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10580,7 +10580,7 @@ export default {
   },
   {
     "num": "108",
-    "name": "lickitung",
+    "name": "Lickitung",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10660,7 +10660,7 @@ export default {
   },
   {
     "num": "109",
-    "name": "koffing",
+    "name": "Koffing",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10757,7 +10757,7 @@ export default {
   },
   {
     "num": "110",
-    "name": "weezing",
+    "name": "Weezing",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10854,7 +10854,7 @@ export default {
   },
   {
     "num": "111",
-    "name": "rhyhorn",
+    "name": "Rhyhorn",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -10958,7 +10958,7 @@ export default {
   },
   {
     "num": "112",
-    "name": "rhydon",
+    "name": "Rhydon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11158,7 +11158,7 @@ export default {
   },
   {
     "num": "114",
-    "name": "tangela",
+    "name": "Tangela",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11252,7 +11252,7 @@ export default {
   },
   {
     "num": "115",
-    "name": "kangaskhan",
+    "name": "Kangaskhan",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11347,7 +11347,7 @@ export default {
   },
   {
     "num": "116",
-    "name": "horsea",
+    "name": "Horsea",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11445,7 +11445,7 @@ export default {
   },
   {
     "num": "117",
-    "name": "seadra",
+    "name": "Seadra",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11550,7 +11550,7 @@ export default {
   },
   {
     "num": "118",
-    "name": "goldeen",
+    "name": "Goldeen",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11639,7 +11639,7 @@ export default {
   },
   {
     "num": "119",
-    "name": "seaking",
+    "name": "Seaking",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11742,7 +11742,7 @@ export default {
   },
   {
     "num": "120",
-    "name": "staryu",
+    "name": "Staryu",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11838,7 +11838,7 @@ export default {
   },
   {
     "num": "121",
-    "name": "starmie",
+    "name": "Starmie",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -11953,7 +11953,7 @@ export default {
   },
   {
     "num": "122",
-    "name": "mr. mime",
+    "name": "Mr. Mime",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12154,7 +12154,7 @@ export default {
   },
   {
     "num": "124",
-    "name": "jynx",
+    "name": "Jynx",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12260,7 +12260,7 @@ export default {
   },
   {
     "num": "125",
-    "name": "electabuzz",
+    "name": "Electabuzz",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12356,7 +12356,7 @@ export default {
   },
   {
     "num": "126",
-    "name": "magmar",
+    "name": "Magmar",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12456,7 +12456,7 @@ export default {
   },
   {
     "num": "127",
-    "name": "pinsir",
+    "name": "Pinsir",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12554,7 +12554,7 @@ export default {
   },
   {
     "num": "128",
-    "name": "tauros",
+    "name": "Tauros",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12635,7 +12635,7 @@ export default {
   },
   {
     "num": "129",
-    "name": "magikarp",
+    "name": "Magikarp",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12701,7 +12701,7 @@ export default {
   },
   {
     "num": "130",
-    "name": "gyarados",
+    "name": "Gyarados",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12813,7 +12813,7 @@ export default {
   },
   {
     "num": "131",
-    "name": "lapras",
+    "name": "Lapras",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12912,7 +12912,7 @@ export default {
   },
   {
     "num": "132",
-    "name": "ditto",
+    "name": "Ditto",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -12969,7 +12969,7 @@ export default {
   },
   {
     "num": "133",
-    "name": "eevee",
+    "name": "Eevee",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13086,7 +13086,7 @@ export default {
   },
   {
     "num": "134",
-    "name": "vaporeon",
+    "name": "Vaporeon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13167,7 +13167,7 @@ export default {
   },
   {
     "num": "135",
-    "name": "jolteon",
+    "name": "Jolteon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13254,7 +13254,7 @@ export default {
   },
   {
     "num": "136",
-    "name": "flareon",
+    "name": "Flareon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13352,7 +13352,7 @@ export default {
   },
   {
     "num": "137",
-    "name": "porygon",
+    "name": "Porygon",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13492,7 +13492,7 @@ export default {
   },
   {
     "num": "138",
-    "name": "omanyte",
+    "name": "Omanyte",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13599,7 +13599,7 @@ export default {
   },
   {
     "num": "139",
-    "name": "omastar",
+    "name": "Omastar",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13706,7 +13706,7 @@ export default {
   },
   {
     "num": "140",
-    "name": "kabuto",
+    "name": "Kabuto",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13799,7 +13799,7 @@ export default {
   },
   {
     "num": "141",
-    "name": "kabutops",
+    "name": "Kabutops",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13899,7 +13899,7 @@ export default {
   },
   {
     "num": "142",
-    "name": "aerodactyl",
+    "name": "Aerodactyl",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -13988,7 +13988,7 @@ export default {
   },
   {
     "num": "143",
-    "name": "snorlax",
+    "name": "Snorlax",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14080,7 +14080,7 @@ export default {
   },
   {
     "num": "144",
-    "name": "articuno",
+    "name": "Articuno",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14158,7 +14158,7 @@ export default {
   },
   {
     "num": "145",
-    "name": "zapdos",
+    "name": "Zapdos",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14244,7 +14244,7 @@ export default {
   },
   {
     "num": "146",
-    "name": "moltres",
+    "name": "Moltres",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14323,7 +14323,7 @@ export default {
   },
   {
     "num": "147",
-    "name": "dratini",
+    "name": "Dratini",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14418,7 +14418,7 @@ export default {
   },
   {
     "num": "148",
-    "name": "dragonair",
+    "name": "Dragonair",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14513,7 +14513,7 @@ export default {
   },
   {
     "num": "149",
-    "name": "dragonite",
+    "name": "Dragonite",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14632,7 +14632,7 @@ export default {
   },
   {
     "num": "150",
-    "name": "mewtwo",
+    "name": "Mewtwo",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14722,7 +14722,7 @@ export default {
   },
   {
     "num": "151",
-    "name": "mew",
+    "name": "Mew",
     "generation": {
       "num": "generation i",
       "name": "kanto"
@@ -14832,7 +14832,7 @@ export default {
   },
   {
     "num": "152",
-    "name": "chikorita",
+    "name": "Chikorita",
     "generation": {
       "num": "generation ii",
       "name": "johto"

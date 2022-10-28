@@ -1,16 +1,15 @@
-import { example } from './data.js';
+import { example} from './data.js';
 
 import data from './data/pokemon/pokemon.js';
-
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
-
+/*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     return `<div>
-<div id="a">
+<div id="a"> 
 <div id="b">
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>

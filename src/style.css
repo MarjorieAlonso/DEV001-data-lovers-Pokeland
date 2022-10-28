@@ -1,11 +1,3 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
 
     background: rgba(77, 75, 75, 0.685);
@@ -15,9 +7,9 @@ header {
     width:100% ;
     display: flex;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(240, 244, 46, 1);
     text-align: center;
-    margin-bottom:30px ;
+    padding: 20px;
     
 }
 
@@ -31,23 +23,27 @@ header {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    padding: 30px;
 }
 .contenido {
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
+    padding: 40px;
 }
 
 h1 {
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 2px rgb(255, 0, 0);
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-family:'Courier New', Courier, monospace;
 }
 
 h2 {
-    font-size: 24px;
-    color: rgb(225, 255, 0);
+    font-size: 35px;
+    color: rgb(6, 6, 6);
+    font-family: courier;
 }
 
 h3 {
@@ -64,17 +60,12 @@ h4 {
     flex-direction: row-reverse;
 }
 
-
-
-
-.encabezado2 {
+.encabezado {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.encabezado3{
-    display: flex;
-    justify-content: flex-end;
+    padding: 40px;
+
 }
 
 #filtro {
@@ -108,7 +99,7 @@ h4 {
 footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 300px;
+ 
 }
 
 #root {
@@ -120,9 +111,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 #a {
@@ -140,17 +128,8 @@ footer {
     text-align: center;
     color: white;
     text-shadow: 8px grey;
-
-
 }
 
 li {
     list-style: none;
 }
-
-/*  @media  screen and (max-width 800px) {
-    #responsive{
-        width:100%;
-    
-    }
-}*/
