@@ -1727,7 +1727,7 @@ export default {
   },
   {
     "num": "019",
-    "name": Rattata",
+    "name": "Rattata",
     "generation": {
       "num": "generation i",
       "name": "kanto"
