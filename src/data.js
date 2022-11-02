@@ -1,6 +1,8 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
+import pokemon from "./data/pokemon/pokemon";
+
+export const example  = () => {
   return 'example';
 };
 
