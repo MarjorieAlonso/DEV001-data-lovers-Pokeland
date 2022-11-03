@@ -7,44 +7,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <div class="contenedor">
-<body>
-  <header>
-          <img class  = "togepi" src = "imagenes/Imagen_de_WhatsApp_2-removebg-preview.png" width="15%" height="15%" />
-        <div class="encabezado">
+
+  <body id="body">
+    <header>
+      <img class="togepi" src="imagenes/Imagen_de_WhatsApp_2-removebg-preview.png" width="15%" height="15%" />
+      <div class="encabezado">
         <h1> Bienvenidos a Pokeland</h1>
         <h2>Tu sitio para conocer tus pokemones favoritos</h2>
+        <div id="audio">
+          <audio controls>
+            <source src="audio/pokemon_intro_gameboy.mp3" type="audio/mp3">
+            <source src="audio/pokemon_intro_gameboy.ogg" type="audio/ogg">
+          </audio>
         </div>
-        <img class = "mewtoo" src = "imagenes/Imagen_de_WhatsApp_2022-10-24_a_las_12.53.15-removebg-preview.png" width="15%" height="15%" />
-      
-  </header>
-  <nav id="responsive">
-    <div id="filtro" >
- 
-      <select id="filtrar" >
-        <option selected="true" disabled="disabled">Filtrar</option>
-        <option value="alfabetico1" id="az">A-Z</option>
-        <option value="alfabetico2" id="za">Z-A</option>
-        <option value="orden1" id="ascendente">Orden Ascendente</option>
-        <option value="orden2" id="descendente">Orden Descendente</option>
-        <option value="orden3" id="region">Region</option>
-      </select>
-    </div>
-    <div id="search">
-      <input type="search" id="Buscar" placeholder="Buscar Pokemon">
-     <img src="imagenes/Imagen_de_WhatsApp_3-removebg-preview.png" width="75px" height="100px" />
-    </div>
-  </nav>
-  <main class="contenido">
-    <div id="root"></div>
-  </main>
-  <footer>
-    <img class="redes" src="imagenes/imagen_footer-removebg-preview.png" width="600px" height="100px">
-    <div>
-      <h4>2022 Pokemon. @1995-2022 Nintendo/Creatures Inc.<br>/GAME FREAK inc. TM, @Nintendo.<br>By: Mayo y Romi</h4>
-    </div>
-  </footer>
+      </div>
+      <img class="mewtoo" src="imagenes/Imagen_de_WhatsApp_2022-10-24_a_las_12.53.15-removebg-preview.png" width="15%"
+        height="15%" />
+    </header>
+    <nav id="responsive">
+      <div id="filtro">
+        <select id="filtrar" class="filter">
+          <option selected="true" disabled="disabled">Filtrar</option>
+          <option value="alfabetico1" id="az">A-Z</option>
+          <option value="alfabetico2" id="za">Z-A</option>
+          <option value="orden1" id="12">Orden Ascendente</option>
+          <option value="orden2" id="21">Orden Descendente</option>
+          <option value="kanto" id="gen1" >Region Kanto</option>
+          <option value="johto" id="gen2" >Region Johto</option>
+        </select>
+      </div>
+      <div id="search" autocomplete="on">
+        <input type="search" id="Buscar" placeholder="Buscar Pokemon">
+        <img src="imagenes/Imagen_de_WhatsApp_3-removebg-preview.png" width="75px" height="100px" />
+      </div>
+    </nav>
+    <main class="contenido">
+      <div id="root" class="resultado"></div>
+    </main>
+    <footer>
+      <img class="redes" src="imagenes/imagen_footer-removebg-preview.png" width="600px" height="100px">
+      <div>
+        <h4>2022 Pokemon. @1995-2022 Nintendo/Creatures Inc.<br>/GAME FREAK inc. TM, @Nintendo.<br>By: Mayo y Romi</h4>
+      </div>
+    </footer>
 
-  <script src="main.js" type="module"></script>
-</body>
+    <script src="main.js" type="module"></script>
+  </body>
 </div>
+
 </html>

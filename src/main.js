@@ -13,7 +13,7 @@ const drawCard = (pokemon) => {
     } else if (pokemon.type.includes("normal")) {
         clase = "grisClaro"
     }
-    else if (pokemon.type.includes("water") ) {
+    else if (pokemon.type.includes("water")) {
         clase = "azulClaro"
     }
     else if (pokemon.type.includes("fire")) {
@@ -34,20 +34,20 @@ const drawCard = (pokemon) => {
     else if (pokemon.type.includes("flying")) {
         clase = "celesteClaro"
     }
-   
-    else if (pokemon.type.includes ("psychic")){
+
+    else if (pokemon.type.includes("psychic")) {
         clase = "rojo"
     }
-       
+
     else if (pokemon.type.includes("fairy")) {
         clase = "rosado"
     }
-       
+
     else if (pokemon.type.includes("fighting")) {
         clase = "fucsia"
     }
-       
-    else if (pokemon.type.includes("rock") ){
+
+    else if (pokemon.type.includes("rock")) {
         clase = "cafeClaro"
     }
     else if (pokemon.type.includes("ghost")) {
@@ -57,13 +57,12 @@ const drawCard = (pokemon) => {
         clase = "grafito"
     }
 
-
     return `<div>
 <div class="a ${clase}"> 
-<div class="b">
+<div  class="b">
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>
-<li> Nombre: ${pokemon.name}</li>
+<li> ${pokemon.name}</li>
 </div></div>
 </div>`;
 }
@@ -71,4 +70,34 @@ for (let i = 0; i < pokemon.length; i++) {
     div.innerHTML += drawCard(pokemon[i]);
 }
 
+/* const selectElement = document.querySelector('.filter'); */
 
+/* selectElement.addEventListener('change', (event) => { */
+    /*  const resultado = document.querySelector('.resultado'); */
+  /*   console.log(event.target.value); */
+
+  /*   if (event.target.value === ("alfabetico1")) {
+        container.innerHTML= "";
+        for (let i = 0; i < test.sortAz.length; i++) {
+            container.innerHTML += img(test.sortAz[i]);
+        function az(
+            funcion orderAZ =()
+        )
+    }
+    else if (event.target.value === ("alfabetico2")) {
+        function za()
+    }
+    else if (event.target.value === ("orden1")) {
+        function 12()
+    }
+    else if (event.target.value === ("orden2")) {
+        function 21()
+    }
+    else if (event.target.value === ("kanto")) {
+        function gen1()
+        }
+    else if (event.target.value === ("johto")) {
+        function gen2()
+    }
+
+ */

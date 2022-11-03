@@ -1,6 +1,6 @@
 body {
-
     background: rgba(77, 75, 75, 0.685);
+    text-transform: capitalize;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
     justify-content: center;
     background-color: rgba(240, 244, 46, 1);
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 
 }
 
@@ -23,7 +23,8 @@ header {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 20px;
+
 }
 
 .contenido {
@@ -76,7 +77,9 @@ h4 {
     justify-content: start;
     height: 30px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-left: 100px;
+
 
 
 }
@@ -89,6 +92,8 @@ h4 {
     display: flex;
     justify-content: end;
     color: rgba(3, 3, 3, 0.542);
+    text-align: center;
+    margin-right: 90px;
 }
 
 ::placeholder {
@@ -108,7 +113,6 @@ footer {
     color: rgb(10, 46, 10);
     margin: 0%;
     display: flex;
-
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -120,64 +124,92 @@ footer {
     height: 280px;
     width: 230px;
     display: flex;
+    justify-content: center;
     background: green;
+    cursor: pointer;
+}
 
+.a:hover {
+    opacity: 75%;
+    transform: scale(1.1)
 }
 
 .b {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
     color: white;
     text-shadow: 8px grey;
+
 }
 
 li {
     list-style: none;
+
 }
 
 .azulClaro {
     background-color: #1b61ca;
 
 }
-.naranja{
+
+.naranja {
     background-color: #f47806;
 }
-.cafeOscuro{
+
+.cafeOscuro {
     background-color: #573103;
 }
-.cafeClaro{
-    background-color : #ca832f;
+
+.cafeClaro {
+    background-color: #ca832f;
 }
-.verdeOscuro{
-    background-color : #1c8834;
+
+.verdeOscuro {
+    background-color: #1c8834;
 }
-.verdeClaro{
-    background-color : #7cca2f;
+
+.verdeClaro {
+    background-color: #7cca2f;
 }
-.rosado{
-    background-color : #df4ed9;
+
+.rosado {
+    background-color: #df4ed9;
 }
-.moradoClaro{
-    background-color : #964693;
+
+.moradoClaro {
+    background-color: #964693;
 }
-.celesteClaro{
-    background-color : #76b3fb;
+
+.celesteClaro {
+    background-color: #76b3fb;
 }
-.rojo{
-    background-color : #fc3232;
+
+.rojo {
+    background-color: #fc3232;
 }
-.amarillo{
-    background-color : #faff00;
+
+.amarillo {
+    background-color: #fbff00c4;
 }
-.moradoOscuro{
-    background-color : #6a0766;
+
+.moradoOscuro {
+    background-color: #6a0766;
 }
-.fucsia{
-    background-color : #db059f;
+
+.fucsia {
+    background-color: #db059f;
 }
-.grisClaro{
-    background-color : #a2a39e;
+
+.grisClaro {
+    background-color: #a2a39e;
 }
-.grafito{
-    background-color : #6b6b6a;
+
+.grafito {
+    background-color: #6b6b6a;
+}
+.johto{
+    display: block;
+}
+.kanto{
+    display: none;
 }
