@@ -1,5 +1,6 @@
 
 import data from './data/pokemon/pokemon.js';
+import { searchFilter } from './data.js';
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
@@ -69,14 +70,28 @@ const drawCard = (pokemon) => {
 for (let i = 0; i < pokemon.length; i++) {
     div.innerHTML += drawCard(pokemon[i]);
 }
+/* buscar pokemon*/
+const search = document.getElementById("search");
 
-/* const selectElement = document.querySelector('.filter'); */
+search.addEventListener ("keydown", (key) =>{
+    const text= search.value;
+    if (key.key === "Enter"){
+        div.innerHTML = " ";
+        const text2 = searchFilter(text, pokemon);
+        text2.forEach((element)=>{
+            div.innerHTML += drawCard(element);
+            console.log(searchFilter)
+        })
+    }
+}) 
 
-/* selectElement.addEventListener('change', (event) => { */
-    /*  const resultado = document.querySelector('.resultado'); */
-  /*   console.log(event.target.value); */
+/*  const selectElement = document.querySelector('.filter'); 
 
-  /*   if (event.target.value === ("alfabetico1")) {
+selectElement.addEventListener('change', (event) => { 
+    const resultado = document.querySelecto r('.resultado'); 
+  console.log(event.target.value); 
+
+  if (event.target.value === ("alfabetico1")) {
         container.innerHTML= "";
         for (let i = 0; i < test.sortAz.length; i++) {
             container.innerHTML += img(test.sortAz[i]);
@@ -99,5 +114,4 @@ for (let i = 0; i < pokemon.length; i++) {
     else if (event.target.value === ("johto")) {
         function gen2()
     }
-
  */

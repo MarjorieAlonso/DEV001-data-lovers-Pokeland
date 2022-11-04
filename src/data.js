@@ -1,7 +1,12 @@
-// estas funciones son de ejemplo
+/* import data from "./data/pokemon/pokemon"; */
 
-import dataP from "./data/pokemon/pokemon";
+export const searchFilter = (search, pokemon)=> {
+  const nameFilter= pokemon.filter((x) =>
+    x.name.includes(search)
+  );
+  return nameFilter;
 
+};
 /* export const example  = () => {
   return 'example';
 };
