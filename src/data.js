@@ -1,26 +1,17 @@
-/* import data from "./data/pokemon/pokemon"; */
+/*  import data from "./data/pokemon/pokemon";   */
 
-export const searchFilter = (search, pokemon)=> {
-  const nameFilter= pokemon.filter(x =>
-  x.name);
-  console.log(nameFilter)
-  return nameFilter;
+export const searchFilter =  (pokemon,nombrePokemon)=> {
+  const nameFilter= pokemon.filter (x=>
+    x.name==nombrePokemon)
+
+    
+  ;return nameFilter
+
+
 };
-
-/* export const searchFilter = (search, pokemon)=> {
-const buscar = pokemon.filter(e=> e.generation.name== "kanto")
-console.log(buscar)
-}; */
-/* export const example  = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-}; */
-
-/* return resultado */
-
+export const ordenPokemon=(array)=>{
+  console.log(array);
+}
 
 
 /* const filtroGen = (pokemon) => {

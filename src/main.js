@@ -1,6 +1,8 @@
 
 import data from './data/pokemon/pokemon.js';
-import { searchFilter } from './data.js';
+import { searchFilter,ordenPokemon } from './data.js'
+
+/* console.log(searchFilter(data.pokemon)) */
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
@@ -71,51 +73,50 @@ for (let i = 0; i < pokemon.length; i++) {
     div.innerHTML += drawCard(pokemon[i]);
 }
 /* buscar pokemon*/
-const search = document.getElementById("search");
+const search = document.getElementById("Buscar");
+const prueba = document.getElementById("prueba")
+prueba.addEventListener("click", () => {
+    const text = search.value;
+    let busca = searchFilter(data.pokemon, text)
+    /*  console.log(busca) */
+    div.innerHTML = " "
+    busca.forEach(nombre => {
 
-search.addEventListener ("keydown", (key) =>{
-    const text= search.value;
-     div.innerHTML = " ";
-     if (searchFilter== name)
+        div.innerHTML += drawCard(nombre)
+    });
+})
 
-     
-     /* (key.key === "Enter"){
-        const text2 = searchFilter(text, pokemon);
-        text2.forEach((element)=>{
-            div.innerHTML += drawCard(element);
-            console.log(searchFilter) 
+/* filtrar */
+const selectElement = document.querySelector('.filter');
 
-      })
-    }
-}) 
- */
-/*  const selectElement = document.querySelector('.filter'); 
+selectElement.addEventListener('change', (event) => {
+    /* const resultado = document.querySelector('.resultado'); */
+   /*  console.log(event.target.value); */
 
-selectElement.addEventListener('change', (event) => { 
-    const resultado = document.querySelecto r('.resultado'); 
-  console.log(event.target.value); 
-
-  if (event.target.value === ("alfabetico1")) {
-        container.innerHTML= "";
-        for (let i = 0; i < test.sortAz.length; i++) {
+    if (event.target.value === "alfabetico1") {
+        div.innerHTML = "";
+        ordenPokemon(pokemon)
+        function drawCard
+    
+        /* for (let i = 0; i < test.sortAz.length; i++) {
             container.innerHTML += img(test.sortAz[i]);
-        function az(
-            funcion orderAZ =()
+            function az(
+            function orderAZ =()
         )
-    }
-    else if (event.target.value === ("alfabetico2")) {
-        function za()
+        } */
+        } else if (event.target.value === ("alfabetico2")) {
+       /*  function za() */
     }
     else if (event.target.value === ("orden1")) {
-        function 12()
+      /*   function 12() */
     }
     else if (event.target.value === ("orden2")) {
-        function 21()
+        /* function 21() */
     }
     else if (event.target.value === ("kanto")) {
-        function gen1()
-        }
-    else if (event.target.value === ("johto")) {
-        function gen2()
+       /*  function gen1() */
     }
- */
+    else if (event.target.value === ("johto")) {
+        /* function gen2() */
+    }
+});
