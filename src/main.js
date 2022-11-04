@@ -75,16 +75,20 @@ const search = document.getElementById("search");
 
 search.addEventListener ("keydown", (key) =>{
     const text= search.value;
-    if (key.key === "Enter"){
-        div.innerHTML = " ";
+     div.innerHTML = " ";
+     if (searchFilter== name)
+
+     
+     /* (key.key === "Enter"){
         const text2 = searchFilter(text, pokemon);
         text2.forEach((element)=>{
             div.innerHTML += drawCard(element);
-            console.log(searchFilter)
-        })
+            console.log(searchFilter) 
+
+      })
     }
 }) 
-
+ */
 /*  const selectElement = document.querySelector('.filter'); 
 
 selectElement.addEventListener('change', (event) => { 

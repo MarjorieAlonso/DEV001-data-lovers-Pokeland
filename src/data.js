@@ -1,12 +1,16 @@
 /* import data from "./data/pokemon/pokemon"; */
 
 export const searchFilter = (search, pokemon)=> {
-  const nameFilter= pokemon.filter((x) =>
-    x.name.includes(search)
-  );
+  const nameFilter= pokemon.filter(x =>
+  x.name);
+  console.log(nameFilter)
   return nameFilter;
-
 };
+
+/* export const searchFilter = (search, pokemon)=> {
+const buscar = pokemon.filter(e=> e.generation.name== "kanto")
+console.log(buscar)
+}; */
 /* export const example  = () => {
   return 'example';
 };
