@@ -1,6 +1,6 @@
 
 import data from './data/pokemon/pokemon.js';
-import { searchFilter,ordenPokemon } from './data.js'
+import { searchFilter,ordenPokemon} from './data.js'
 
 /* console.log(searchFilter(data.pokemon)) */
 
@@ -69,9 +69,10 @@ const drawCard = (pokemon) => {
 </div></div>
 </div>`;
 }
+let pagina =""
 for (let i = 0; i < pokemon.length; i++) {
-    div.innerHTML += drawCard(pokemon[i]);
-}
+    pagina += drawCard(pokemon[i]);
+} div.innerHTML =pagina;
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
 const prueba = document.getElementById("prueba")
@@ -86,37 +87,38 @@ prueba.addEventListener("click", () => {
     });
 })
 
-/* filtrar */
+
 const selectElement = document.querySelector('.filter');
 
 selectElement.addEventListener('change', (event) => {
-    /* const resultado = document.querySelector('.resultado'); */
-   /*  console.log(event.target.value); */
-
-    if (event.target.value === "alfabetico1") {
-        div.innerHTML = "";
-        ordenPokemon(pokemon)
-        function drawCard
-    
-        /* for (let i = 0; i < test.sortAz.length; i++) {
-            container.innerHTML += img(test.sortAz[i]);
-            function az(
-            function orderAZ =()
-        )
-        } */
-        } else if (event.target.value === ("alfabetico2")) {
-       /*  function za() */
+   const resultado = document.querySelector('.resultado');
+  /*  console.log(event.target.value);   */
+   if (event.target.value === "alfabetico1") {
+    div.innerHTML = "";
+   let pokemonAz= ordenPokemon (pokemon)
+  /*  console.log(pokemonAz); */
+  div.innerHTML=""
+  pokemonAz.forEach(pokemon =>{
+    div.innerHTML += drawCard(pokemon)
+  })
+  
+   }
+ 
+/*  else if (event.target.value === ("alfabetico2")) {
+       
     }
     else if (event.target.value === ("orden1")) {
-      /*   function 12() */
+       
     }
     else if (event.target.value === ("orden2")) {
-        /* function 21() */
+        
     }
     else if (event.target.value === ("kanto")) {
-       /*  function gen1() */
+        
     }
     else if (event.target.value === ("johto")) {
-        /* function gen2() */
-    }
-});
+        function gen2()
+    }*/
+})
+
+ 
