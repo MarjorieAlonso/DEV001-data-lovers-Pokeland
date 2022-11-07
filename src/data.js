@@ -9,7 +9,7 @@ export const searchFilter =  (pokemon,nombrePokemon)=> {
 
 
 };
-export const ordenPokemon=(array)=>{
+export const ordenAzPokemon=(array)=>{
 
   return array.sort(function (a, b) {
     
@@ -24,12 +24,50 @@ export const ordenPokemon=(array)=>{
   
   
 }
+export const ordenZaPokemon=(array)=>{
+  return array.sort(function (a, b) {
+    
+    if (b.name < a.name) {
+      return -1;
+    }
+    if (b.name> a.name) {
+      return 1;
+    }
+   return 0;
+  })
 
+}
+export const ordenAscendente=(array)=>{
+  return array.sort(function (a, b) {
+    
+    if (a.num < b.num) {
+      return -1;
+    }
+    if (a.num> b.num) {
+      return 1;
+    }
+   return 0;
+  })
 
-/* const filtroGen = (pokemon) => {
-  let clase = "";
-  if (pokemon.generation.includes("johto")) {
-      clase = "johto"
-    else if (pokemon.generation.includes("kanto")){
-      clase = "kanto"
-    } */
+}
+export const ordenDescendente=(array)=>{
+  return array.sort(function (a, b) {
+    
+    if (b.num < a.num) {
+      return -1;
+    }
+    if (b.num> a.num) {
+      return 1;
+    }
+   return 0;
+  })
+
+}
+export const ordenKanto=(pokemon)=>{
+  const kanto=pokemon.filter(e=>e.generation.name=="kanto")
+  return kanto;
+}
+export const ordenJohto=(pokemon)=>{
+  const johto=pokemon.filter(e=>e.generation.name=="johto")
+  return johto;
+}
