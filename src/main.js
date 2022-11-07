@@ -1,11 +1,12 @@
 
 import data from './data/pokemon/pokemon.js';
-import { searchFilter,ordenPokemon} from './data.js'
+import { searchFilter, ordenAzPokemon, ordenZaPokemon, ordenAscendente, ordenDescendente, ordenKanto, ordenJohto } from './data.js'
 
 /* console.log(searchFilter(data.pokemon)) */
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
+
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
 /*cartas de cada pokemon*/
@@ -69,10 +70,10 @@ const drawCard = (pokemon) => {
 </div></div>
 </div>`;
 }
-let pagina =""
+let pagina = ""
 for (let i = 0; i < pokemon.length; i++) {
     pagina += drawCard(pokemon[i]);
-} div.innerHTML =pagina;
+} div.innerHTML = pagina;
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
 const prueba = document.getElementById("prueba")
@@ -91,34 +92,70 @@ prueba.addEventListener("click", () => {
 const selectElement = document.querySelector('.filter');
 
 selectElement.addEventListener('change', (event) => {
-   const resultado = document.querySelector('.resultado');
-  /*  console.log(event.target.value);   */
-   if (event.target.value === "alfabetico1") {
-    div.innerHTML = "";
-   let pokemonAz= ordenPokemon (pokemon)
-  /*  console.log(pokemonAz); */
-  div.innerHTML=""
-  pokemonAz.forEach(pokemon =>{
-    div.innerHTML += drawCard(pokemon)
-  })
-  
-   }
- 
-/*  else if (event.target.value === ("alfabetico2")) {
-       
+   
+    /*  filtro de la A a la Z  */
+    if (event.target.value === "alfabetico1") {
+        div.innerHTML = "";
+        let pokemonAz = ordenAzPokemon(pokemon)
+
+        div.innerHTML = ""
+        pokemonAz.forEach(pokemon => {
+            div.innerHTML += drawCard(pokemon)
+        })
     }
+    /* filtro de la Z a la A */
+    else if (event.target.value === ("alfabetico2")) {
+        div.innerHTML = "";
+        let pokemonZa = ordenZaPokemon(pokemon)
+        /*  console.log(pokemonAz); */
+        div.innerHTML = ""
+        pokemonZa.forEach(pokemon => {
+            div.innerHTML += drawCard(pokemon)
+        })
+    }
+    /* filtro por 1 al 251*/
     else if (event.target.value === ("orden1")) {
-       
+        div.innerHTML = "";
+        let pokeAscendente = ordenAscendente(pokemon)
+        /*  console.log(pokemonAz); */
+        div.innerHTML = ""
+        pokeAscendente.forEach(pokemon => {
+            div.innerHTML += drawCard(pokemon)
+        })
     }
+    /* filtro por 251 al 1*/
     else if (event.target.value === ("orden2")) {
-        
+        div.innerHTML = "";
+        let pokeDescendente = ordenDescendente(pokemon)
+
+        div.innerHTML = ""
+        pokeDescendente.forEach(pokemon => {
+            div.innerHTML += drawCard(pokemon)
+        })
     }
+
+
     else if (event.target.value === ("kanto")) {
-        
+        div.innerHTML = "";
+        let pokeKanto = ordenKanto(pokemon)
+        /* console.log(pokeKanto); */
+
+        div.innerHTML = ""
+        pokeKanto.forEach(Kanto=>{
+            div.innerHTML += drawCard(Kanto)
+        })
+
     }
     else if (event.target.value === ("johto")) {
-        function gen2()
-    }*/
+        div.innerHTML = "";
+        let pokeJohto = ordenJohto(pokemon)
+        /* console.log(pokeJohto); */
+
+        div.innerHTML = ""
+        pokeJohto.forEach(Johto=>{
+            div.innerHTML += drawCard(Johto)
+        })
+        
+    }  
 })
 
- 
