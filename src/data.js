@@ -10,7 +10,19 @@ export const searchFilter =  (pokemon,nombrePokemon)=> {
 
 };
 export const ordenPokemon=(array)=>{
-  console.log(array);
+
+  return array.sort(function (a, b) {
+    
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name> b.name) {
+      return 1;
+    }
+   return 0;
+  })
+  
+  
 }
 
 
