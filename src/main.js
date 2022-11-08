@@ -12,7 +12,7 @@ const div = document.getElementById("root");
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     let clase = "";
-    if (pokemon.type.includes("grass")) {
+  /*   if (pokemon.type.includes("grass")) {
         clase = "verde"
     } else if (pokemon.type.includes("normal")) {
         clase = "grisClaro"
@@ -59,7 +59,7 @@ const drawCard = (pokemon) => {
     }
     else if (pokemon.type.includes("dark")) {
         clase = "grafito"
-    }
+    } */
 
     return `<div>
 <div class="a ${clase}"> 
@@ -97,15 +97,15 @@ selectElement.addEventListener('change', (event) => {
     if (event.target.value === "alfabetico1") {
         div.innerHTML = "";
         let pokemonAz = ordenAzPokemon(pokemon)
-
-        div.innerHTML = ""
         pokemonAz.forEach(pokemon => {
+            
             div.innerHTML += drawCard(pokemon)
+            
         })
     }
     /* filtro de la Z a la A */
     else if (event.target.value === ("alfabetico2")) {
-        div.innerHTML = "";
+       
         let pokemonZa = ordenZaPokemon(pokemon)
         /*  console.log(pokemonAz); */
         div.innerHTML = ""
@@ -115,7 +115,7 @@ selectElement.addEventListener('change', (event) => {
     }
     /* filtro por 1 al 251*/
     else if (event.target.value === ("orden1")) {
-        div.innerHTML = "";
+        
         let pokeAscendente = ordenAscendente(pokemon)
         /*  console.log(pokemonAz); */
         div.innerHTML = ""
@@ -125,7 +125,7 @@ selectElement.addEventListener('change', (event) => {
     }
     /* filtro por 251 al 1*/
     else if (event.target.value === ("orden2")) {
-        div.innerHTML = "";
+       
         let pokeDescendente = ordenDescendente(pokemon)
 
         div.innerHTML = ""
@@ -136,7 +136,7 @@ selectElement.addEventListener('change', (event) => {
 
 
     else if (event.target.value === ("kanto")) {
-        div.innerHTML = "";
+       
         let pokeKanto = ordenKanto(pokemon)
         /* console.log(pokeKanto); */
 
@@ -147,7 +147,7 @@ selectElement.addEventListener('change', (event) => {
 
     }
     else if (event.target.value === ("johto")) {
-        div.innerHTML = "";
+        
         let pokeJohto = ordenJohto(pokemon)
         /* console.log(pokeJohto); */
 
