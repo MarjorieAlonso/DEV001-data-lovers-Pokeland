@@ -2,7 +2,7 @@
 
 export const searchFilter =  (pokemon,nombrePokemon)=> {
   const nameFilter= pokemon.filter (x=>
-    x.name==nombrePokemon)
+    x.name.toUpperCase()==nombrePokemon.toUpperCase())
 
     
   ;return nameFilter
