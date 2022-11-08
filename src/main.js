@@ -12,7 +12,7 @@ const div = document.getElementById("root");
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     let clase = "";
-  /*   if (pokemon.type.includes("grass")) {
+   if (pokemon.type.includes("grass")) {
         clase = "verde"
     } else if (pokemon.type.includes("normal")) {
         clase = "grisClaro"
@@ -59,7 +59,7 @@ const drawCard = (pokemon) => {
     }
     else if (pokemon.type.includes("dark")) {
         clase = "grafito"
-    } */
+    } 
 
     return `<div>
 <div class="a ${clase}"> 
