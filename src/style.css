@@ -7,7 +7,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(240, 244, 46, 1);
+    background-color: rgba(241, 244, 46, 0.811);
     text-align: center;
     padding: 15px;
 
@@ -77,10 +77,15 @@ h4 {
     justify-content: start;
     height: 30px;
     text-align: center;
-    margin-top: 15px;
-    margin-left: 100px;
+    margin-top: 5px;
+    margin-left: 180px;
+    justify-content: space-between;
 
+}
 
+#filtrar {
+    background-color: #b7b2b2;
+    text-align: center;
 
 }
 
@@ -96,10 +101,10 @@ h4 {
     margin-right: 90px;
 }
 
-::placeholder {
-    color: rgba(78, 78, 78, 0.61);
+#prueba {
+    background-color: #b7b2b2;
     text-align: center;
-
+    border: none;
 }
 
 footer {
@@ -141,6 +146,16 @@ footer {
     color: white;
     text-shadow: 8px grey;
 
+}
+
+#verMas {
+    border-radius: 80%;
+    height: auto;
+    width: auto;
+    border-color: rgb(59, 59, 59);
+    background-color: rgba(59, 59, 59, 0.603);
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
 }
 
 li {
@@ -208,9 +223,44 @@ li {
 .grafito {
     background-color: #6b6b6a;
 }
-.johto{
+
+.johto {
     display: block;
 }
-.kanto{
+
+.kanto {
     display: none;
 }
+#myModal{
+   /*  display: none; */
+    background: #1c8834;
+    height: 700px;
+    width: 700px;
+    z-index: 1;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10%;
+    border-style:dotted;
+    background-image: url(imagenes/ball.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    opacity: 50%;
+    text-align: center;
+  
+    
+}
+.close{
+    
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    float: right;
+    font-weight: bold;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 65px;
+    border-radius: 10%;
+    
+}
+

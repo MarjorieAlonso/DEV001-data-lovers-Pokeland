@@ -1,73 +1,74 @@
 /*  import data from "./data/pokemon/pokemon";   */
 
-export const searchFilter =  (pokemon,nombrePokemon)=> {
-  const nameFilter= pokemon.filter (x=>
-    x.name.toUpperCase()==nombrePokemon.toUpperCase())
+export const searchFilter = (pokemon, nombrePokemon) => {
+  const nameFilter = pokemon.filter(x =>
+    x.name.toUpperCase() == nombrePokemon.toUpperCase())
 
-    
-  ;return nameFilter
+
+    ; return nameFilter
 
 
 };
-export const ordenAzPokemon=(array)=>{
+export const ordenAzPokemon = (array) => {
 
   return array.sort(function (a, b) {
-    
+
     if (a.name < b.name) {
       return -1;
     }
-    if (a.name> b.name) {
+    if (a.name > b.name) {
       return 1;
     }
-   return 0;
+    return 0;
   })
-  
-  
+
+
 }
-export const ordenZaPokemon=(array)=>{
+export const ordenZaPokemon = (array) => {
   return array.sort(function (a, b) {
-    
+
     if (b.name < a.name) {
       return -1;
     }
-    if (b.name> a.name) {
+    if (b.name > a.name) {
       return 1;
     }
-   return 0;
+    return 0;
   })
 
 }
-export const ordenAscendente=(array)=>{
+export const ordenAscendente = (array) => {
   return array.sort(function (a, b) {
-    
+
     if (a.num < b.num) {
       return -1;
     }
-    if (a.num> b.num) {
+    if (a.num > b.num) {
       return 1;
     }
-   return 0;
+    return 0;
   })
 
 }
-export const ordenDescendente=(array)=>{
+export const ordenDescendente = (array) => {
   return array.sort(function (a, b) {
-    
+
     if (b.num < a.num) {
       return -1;
     }
-    if (b.num> a.num) {
+    if (b.num > a.num) {
       return 1;
     }
-   return 0;
+    return 0;
   })
 
 }
-export const ordenKanto=(pokemon)=>{
-  const kanto=pokemon.filter(e=>e.generation.name=="kanto")
+export const ordenKanto = (pokemon) => {
+  const kanto = pokemon.filter(e => e.generation.name == "kanto")
   return kanto;
 }
-export const ordenJohto=(pokemon)=>{
-  const johto=pokemon.filter(e=>e.generation.name=="johto")
+export const ordenJohto = (pokemon) => {
+  
+  const johto = pokemon.filter(e => e.generation.name == "johto")
   return johto;
 }

@@ -9,10 +9,11 @@ const pokemon = data.pokemon;
 
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
+
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     let clase = "";
-   if (pokemon.type.includes("grass")) {
+    if (pokemon.type.includes("grass")) {
         clase = "verde"
     } else if (pokemon.type.includes("normal")) {
         clase = "grisClaro"
@@ -59,7 +60,7 @@ const drawCard = (pokemon) => {
     }
     else if (pokemon.type.includes("dark")) {
         clase = "grafito"
-    } 
+    }
 
     return `<div>
 <div onClick=(mostartModal) class="a ${clase}"> 
@@ -67,13 +68,15 @@ const drawCard = (pokemon) => {
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>
 <li> ${pokemon.name}</li>
+<button type="button" id="verMas">Ver Mas Info</button>
 </div></div>
-</div>`;
+</div>`
 }
 let pagina = ""
 for (let i = 0; i < pokemon.length; i++) {
     pagina += drawCard(pokemon[i]);
 } div.innerHTML = pagina;
+
 
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
@@ -93,20 +96,20 @@ prueba.addEventListener("click", () => {
 const selectElement = document.querySelector('.filter');
 
 selectElement.addEventListener('change', (event) => {
-   
+
     /*  filtro de la A a la Z  */
     if (event.target.value === "alfabetico1") {
         div.innerHTML = "";
         let pokemonAz = ordenAzPokemon(pokemon)
         pokemonAz.forEach(pokemon => {
-            
+
             div.innerHTML += drawCard(pokemon)
-            
+
         })
     }
     /* filtro de la Z a la A */
     else if (event.target.value === ("alfabetico2")) {
-       
+
         let pokemonZa = ordenZaPokemon(pokemon)
         /*  console.log(pokemonAz); */
         div.innerHTML = ""
@@ -116,7 +119,7 @@ selectElement.addEventListener('change', (event) => {
     }
     /* filtro por 1 al 251*/
     else if (event.target.value === ("orden1")) {
-        
+
         let pokeAscendente = ordenAscendente(pokemon)
         /*  console.log(pokemonAz); */
         div.innerHTML = ""
@@ -126,7 +129,7 @@ selectElement.addEventListener('change', (event) => {
     }
     /* filtro por 251 al 1*/
     else if (event.target.value === ("orden2")) {
-       
+
         let pokeDescendente = ordenDescendente(pokemon)
 
         div.innerHTML = ""
@@ -137,30 +140,67 @@ selectElement.addEventListener('change', (event) => {
 
 
     else if (event.target.value === ("kanto")) {
-       
+
         let pokeKanto = ordenKanto(pokemon)
+
         /* console.log(pokeKanto); */
 
         div.innerHTML = ""
-        pokeKanto.forEach(Kanto=>{
+        pokeKanto.forEach(Kanto => {
             div.innerHTML += drawCard(Kanto)
         })
 
     }
     else if (event.target.value === ("johto")) {
-        
+
         let pokeJohto = ordenJohto(pokemon)
+
         /* console.log(pokeJohto); */
 
         div.innerHTML = ""
-        pokeJohto.forEach(Johto=>{
+        pokeJohto.forEach(Johto => {
             div.innerHTML += drawCard(Johto)
         })
-        
-    }  
+
+    }
 })
 
-const modal = document.getElementById("myModal");
-const verModal = document.getElementById("modal")
-verModal.addEventListener("click", () => {
-})
+let copi = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("verMas");
+
+// Get the <span> element that closes the modal
+let cerrar = document.getElementsById("close");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  ver.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+cerrar.onclick = function() {
+  ver.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == ver) {
+    ver.style.display = "none";
+  }
+}  
+/**
+ */
+
+const ver = document.getElementById("modal-Content");
+
+/*cartas de cada pokemon*/
+const drawModal = (pokemon) => {
+
+    return `<ver>
+<li> # ${pokemon.num}</li>
+<img src= "${pokemon.img}"/>
+<li> ${pokemon.name}</li>
+
+</ver>`
+}

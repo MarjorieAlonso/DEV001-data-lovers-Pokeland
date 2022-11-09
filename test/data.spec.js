@@ -32,8 +32,6 @@ it('Que retorne el array ordenado de la A-Z', () => {
 /*test za*/
 describe("ordenZaPokemon", () => {
   it("deberia ser una funcion", () => {
-
-
     expect(typeof ordenZaPokemon).toBe("function");
   });
 });
@@ -46,7 +44,6 @@ it('Que retorne el array ordenado de la Z-A', () => {
 });
 
 /*test 1-251*/
-
 describe("ordenAscendentePokemon", () => {
   it("deberia ser una funcion", () => {
 
@@ -67,7 +64,7 @@ describe("ordenDescendentePokemon", () => {
   it("deberia ser una funcion", () => {
 
 
-    expect(typeof ordenDescendente).toBe("function");
+  expect(typeof ordenDescendente).toBe("function");
   });
 });
 it('Que retorne el array ordenado de 251-1', () => {
@@ -88,20 +85,21 @@ describe("ordenKanto", () => {
 });
 it('Que retorne el array Kanto', () => {
   const genKanto = {
-    generation: {
-      "name": "kanto"
-    },
-    generation2: {
-      "name": "johto"
-    },
+    generation: 
+    [
+         {
+            generation:
+            {name: 'kanto'}
+          },
+          {
+            generation:
+            {name: 'kanto'}
+          },
+    ]
   }
-  const resultadoKanto = {
-    generation: {
-      "name": "kanto"
-    }
-  }
+  const resultadoKanto = {"generation": {"name": "johto"}}
 
-  expect(ordenKanto(genKanto)).toEqual(resultadoKanto)
+  expect(ordenKanto(genKanto)).toEqual(resultadoKanto);
 });
 
 /* test filtro johto*/
@@ -113,19 +111,18 @@ describe("ordenJohto", () => {
   });
 });
 it('Que retorne el array Johto', () => {
-  const genJohto = {
-    generation: {
-      "name": "johto"
-    },
-    generation1: {
-      "name": "kanto"
-    },
-  }
-    const resultadoJohto = {
-      generation: {
-        "name": "johto"
-      }
-    }
-  
+  const genJohto =
+  [
+    {
+       generation:
+       {name: 'kanto'}
+     },
+     {
+       generation:
+       {name: 'kanto'}
+     },
+  ]
+  const resultadoJohto = {"generation" :{"name": "johto"}}
+
   expect(ordenJohto(genJohto)).toEqual(resultadoJohto)
-});
+})
