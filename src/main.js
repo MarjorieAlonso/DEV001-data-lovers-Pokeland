@@ -62,7 +62,7 @@ const drawCard = (pokemon) => {
     } 
 
     return `<div>
-<div class="a ${clase}"> 
+<div onClick=(mostartModal) class="a ${clase}"> 
 <div  class="b">
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>
@@ -74,6 +74,7 @@ let pagina = ""
 for (let i = 0; i < pokemon.length; i++) {
     pagina += drawCard(pokemon[i]);
 } div.innerHTML = pagina;
+
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
 const prueba = document.getElementById("prueba")
@@ -159,3 +160,7 @@ selectElement.addEventListener('change', (event) => {
     }  
 })
 
+const modal = document.getElementById("myModal");
+const verModal = document.getElementById("modal")
+verModal.addEventListener("click", () => {
+})
