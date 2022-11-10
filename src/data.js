@@ -19,7 +19,6 @@ export const ordenAzPokemon = (array) => {
     if (a.name > b.name) {
       return 1;
     }
-    return 0;
   })
 
 
@@ -33,7 +32,6 @@ export const ordenZaPokemon = (array) => {
     if (b.name > a.name) {
       return 1;
     }
-    return 0;
   })
 
 }
@@ -46,7 +44,6 @@ export const ordenAscendente = (array) => {
     if (a.num > b.num) {
       return 1;
     }
-    return 0;
   })
 
 }
@@ -59,13 +56,12 @@ export const ordenDescendente = (array) => {
     if (b.num > a.num) {
       return 1;
     }
-    return 0;
   })
 
 }
 export const ordenKanto = (pokemon) => {
   const kanto = pokemon.filter(e => e.generation.name == "kanto")
-  console.log(kanto);
+
   return kanto;
 }
 export const ordenJohto = (pokemon) => {

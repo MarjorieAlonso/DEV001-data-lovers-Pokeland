@@ -63,7 +63,7 @@ const drawCard = (pokemon) => {
     }
 
     return `<div>
-<div onClick=(mostartModal) class="a ${clase}"> 
+<div class="a ${clase}"> 
 <div  class="b">
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>
@@ -165,37 +165,34 @@ selectElement.addEventListener('change', (event) => {
     }
 })
 
-/* let copi = document.getElementById("myModal"); */
+/*modal*/
 
-// Get the button that opens the modal
-let btn = document.getElementById("verMas");
+/*  let ver= document.getElementById("myModal"); 
 
-// Get the <span> element that closes the modal
-let cerrar = document.getElementsById("close");
+let btn = document.querySelectorAll("#verMas");
+/* console.log(btn) */
 
-// When the user clicks on the button, open the modal
+/*let cerrar = document.getElementById("close");
+
 btn.onclick = function() {
   ver.style.display = "block";
+  /* console.log("hola") *//*
 }
 
-// When the user clicks on <span> (x), close the modal
 cerrar.onclick = function() {
   ver.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == ver) {
     ver.style.display = "none";
-  }
-}  
-/**
- */
+  }}  
 
-const ver = document.getElementById("modal-Content");
+const mostModal = document.getElementById("modal-Content"); 
 
-/*cartas de cada pokemon*/
-/* const drawModal = (pokemon) => {
+/*cartas de cada pokemon*//*
+const drawModal = (pokemon) => { 
 
     return `<ver>
 <li> # ${pokemon.num}</li>
@@ -203,4 +200,4 @@ const ver = document.getElementById("modal-Content");
 <li> ${pokemon.name}</li>
 
 </ver>`
-} */
+}   */
