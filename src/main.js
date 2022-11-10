@@ -165,7 +165,7 @@ selectElement.addEventListener('change', (event) => {
     }
 })
 
-let copi = document.getElementById("myModal");
+/* let copi = document.getElementById("myModal"); */
 
 // Get the button that opens the modal
 let btn = document.getElementById("verMas");
@@ -195,7 +195,7 @@ window.onclick = function(event) {
 const ver = document.getElementById("modal-Content");
 
 /*cartas de cada pokemon*/
-const drawModal = (pokemon) => {
+/* const drawModal = (pokemon) => {
 
     return `<ver>
 <li> # ${pokemon.num}</li>
@@ -203,4 +203,4 @@ const drawModal = (pokemon) => {
 <li> ${pokemon.name}</li>
 
 </ver>`
-}
+} */

@@ -1,5 +1,6 @@
+/* import { TestWatcher } from 'jest'; */
 import { searchFilter, ordenAzPokemon, ordenZaPokemon, ordenAscendente, ordenDescendente, ordenKanto, ordenJohto } from '../src/data.js';
-
+import data from '../src/data/pokemon/pokemon.js';
 /*test search*/
 describe('searchFilter', () => {
   it('filtra por nombre de pokemon', () => {
@@ -15,8 +16,6 @@ describe('searchFilter', () => {
 /*test de AZ*/
 describe("ordenAzPokemon", () => {
   it("deberia ser una funcion", () => {
-
-
     expect(typeof ordenAzPokemon).toBe("function");
   });
 });
@@ -64,7 +63,7 @@ describe("ordenDescendentePokemon", () => {
   it("deberia ser una funcion", () => {
 
 
-  expect(typeof ordenDescendente).toBe("function");
+    expect(typeof ordenDescendente).toBe("function");
   });
 });
 it('Que retorne el array ordenado de 251-1', () => {
@@ -80,49 +79,27 @@ describe("ordenKanto", () => {
   it("deberia ser una funcion", () => {
 
 
-    expect(typeof ordenKanto).toBe("function");
+    expect(typeof ordenKanto).toBe('function');
+  });
+
+  it('Que ordenKanto retorne solo los generation== kanto', () => {
+
+    const kanto = ordenKanto(data);
+    test.each(kanto, () => { expect(kanto.generation).toBe('kanto') }
+    );
   });
 });
-it('Que retorne el array Kanto', () => {
-  const genKanto = {
-    generation: 
-    [
-         {
-            generation:
-            {name: 'kanto'}
-          },
-          {
-            generation:
-            {name: 'kanto'}
-          },
-    ]
-  }
-  const resultadoKanto = {"generation": {"name": "johto"}}
-
-  expect(ordenKanto(genKanto)).toEqual(resultadoKanto);
-});
-
 /* test filtro johto*/
 describe("ordenJohto", () => {
   it("deberia ser una funcion", () => {
 
-
     expect(typeof ordenJohto).toBe("function");
   });
-});
-it('Que retorne el array Johto', () => {
-  const genJohto =
-  [
-    {
-       generation:
-       {name: 'kanto'}
-     },
-     {
-       generation:
-       {name: 'kanto'}
-     },
-  ]
-  const resultadoJohto = {"generation" :{"name": "johto"}}
 
-  expect(ordenJohto(genJohto)).toEqual(resultadoJohto)
-})
+  it('Que retorne el array Johto', () => {
+
+    const genjohto = ordenJohto(data);
+    test.each(genjohto, () => { expect(genjohto.generation).toBe('kanto') }
+    )
+  })
+});
