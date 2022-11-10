@@ -1,4 +1,4 @@
-/*  import data from "./data/pokemon/pokemon";   */
+/*  import data from "./data/pokemon/pokemon";  */
 
 export const searchFilter = (pokemon, nombrePokemon) => {
   const nameFilter = pokemon.filter(x =>
@@ -65,6 +65,7 @@ export const ordenDescendente = (array) => {
 }
 export const ordenKanto = (pokemon) => {
   const kanto = pokemon.filter(e => e.generation.name == "kanto")
+  console.log(kanto);
   return kanto;
 }
 export const ordenJohto = (pokemon) => {
