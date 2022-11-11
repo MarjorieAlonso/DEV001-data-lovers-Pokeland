@@ -232,7 +232,7 @@ li {
     display: none;
 }
 #myModal{
-   /*  display: none; */
+   /*  display: none; */ 
     background: #1c8834;
     height: 700px;
     width: 700px;
@@ -244,7 +244,6 @@ li {
     background-image: url(imagenes/ball.png);
     background-repeat:no-repeat;
     background-size: cover;
-    opacity: 50%;
     text-align: center;
   
     

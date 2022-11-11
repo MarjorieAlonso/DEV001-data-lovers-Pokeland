@@ -80,19 +80,19 @@ for (let i = 0; i < pokemon.length; i++) {
 
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
-const prueba = document.getElementById("prueba")
+const prueba = document.getElementById("prueba");
 prueba.addEventListener("click", () => {
     const text = search.value;
     let busca = searchFilter(data.pokemon, text)
-    /*  console.log(busca) */
     div.innerHTML = " "
     busca.forEach(nombre => {
 
         div.innerHTML += drawCard(nombre)
     });
-})
+});
 
 
+/*filtros*/
 const selectElement = document.querySelector('.filter');
 
 selectElement.addEventListener('change', (event) => {
@@ -167,37 +167,34 @@ selectElement.addEventListener('change', (event) => {
 
 /*modal*/
 
-/*  let ver= document.getElementById("myModal"); 
+/* let ver= document.getElementById("myModal"); 
 
 let btn = document.querySelectorAll("#verMas");
-/* console.log(btn) */
 
-/*let cerrar = document.getElementById("close");
+let cerrar = document.getElementById("close");
 
 btn.onclick = function() {
   ver.style.display = "block";
-  /* console.log("hola") *//*
+  
 }
 
 cerrar.onclick = function() {
   ver.style.display = "none";
 }
-
-
-window.onclick = function(event) {
-  if (event.target == ver) {
-    ver.style.display = "none";
-  }}  
+ 
 
 const mostModal = document.getElementById("modal-Content"); 
 
-/*cartas de cada pokemon*//*
+/*cartas de cada pokemon*//* 
 const drawModal = (pokemon) => { 
 
-    return `<ver>
+    return `<myModal>
 <li> # ${pokemon.num}</li>
 <img src= "${pokemon.img}"/>
 <li> ${pokemon.name}</li>
 
-</ver>`
-}   */
+</myModal>`
+}     */
+/* if (document.getElementById("verMas"){
+    var modal = document.getElementById("myModal");
+}) */
