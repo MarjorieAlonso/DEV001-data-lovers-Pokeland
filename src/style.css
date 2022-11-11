@@ -232,7 +232,7 @@ li {
     display: none;
 }
 #myModal{
-   /*  display: none; */ 
+    display: none; 
     background: #1c8834;
     height: 700px;
     width: 700px;
@@ -245,9 +245,12 @@ li {
     background-repeat:no-repeat;
     background-size: cover;
     text-align: center;
+    
   
     
 }
+
+
 .close{
     
     font-size: 20px;
