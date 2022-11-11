@@ -9,6 +9,10 @@ const pokemon = data.pokemon;
 
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
+let ver= document.getElementById("myModal"); 
+let btn = document.querySelectorAll("#verMas");
+
+let cerrar = document.getElementById("close");
 
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
@@ -62,21 +66,41 @@ const drawCard = (pokemon) => {
         clase = "grafito"
     }
 
-    return `<div>
-<div class="a ${clase}"> 
-<div  class="b">
-<li> # ${pokemon.num}</li>
-<img src= "${pokemon.img}"/>
-<li> ${pokemon.name}</li>
-<button type="button" id="verMas">Ver Mas Info</button>
-</div></div>
-</div>`
-}
-let pagina = ""
-for (let i = 0; i < pokemon.length; i++) {
-    pagina += drawCard(pokemon[i]);
-} div.innerHTML = pagina;
 
+
+    const contenedor = document.createElement("div")
+    contenedor.classList.add("a")
+    contenedor.classList.add(clase)
+    const contenedor2 = document.createElement("div")
+    contenedor2.classList.add("b")
+    const numero = document.createElement("li")
+    numero.textContent=(pokemon.num)
+    contenedor2.appendChild(numero)
+    const imagen = document.createElement("img")
+    imagen.setAttribute("src", pokemon.img)
+    contenedor2.appendChild(imagen)
+    const nombre = document.createElement("li")
+    nombre.textContent=(pokemon.name)
+    contenedor2.appendChild(nombre)
+ const crearBoton = document.createElement("button")
+ crearBoton.textContent=("ver mas info")
+
+  crearBoton.onclick = function() {
+
+    ver.style.display = "block";
+};
+
+    contenedor2.appendChild(crearBoton)
+    contenedor.appendChild(contenedor2)
+   
+
+    return contenedor
+}
+
+
+for (let i = 0; i < pokemon.length; i++) {
+    div.appendChild(drawCard(pokemon[i]))
+}
 
 /* buscar pokemon*/
 const search = document.getElementById("Buscar");
@@ -165,13 +189,14 @@ selectElement.addEventListener('change', (event) => {
     }
 })
 
+
+
 /*modal*/
 
-/* let ver= document.getElementById("myModal"); 
+ 
 
-let btn = document.querySelectorAll("#verMas");
 
-let cerrar = document.getElementById("close");
+
 
 btn.onclick = function() {
   ver.style.display = "block";
@@ -183,18 +208,7 @@ cerrar.onclick = function() {
 }
  
 
-const mostModal = document.getElementById("modal-Content"); 
 
-/*cartas de cada pokemon*//* 
-const drawModal = (pokemon) => { 
 
-    return `<myModal>
-<li> # ${pokemon.num}</li>
-<img src= "${pokemon.img}"/>
-<li> ${pokemon.name}</li>
 
-</myModal>`
-}     */
-/* if (document.getElementById("verMas"){
-    var modal = document.getElementById("myModal");
-}) */
+
