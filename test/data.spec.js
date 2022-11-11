@@ -74,42 +74,42 @@ it('Que retorne el array ordenado de 251-1', () => {
 });
 
 /* test filtro kanto*/
-describe ("ordenKanto",()=>{
-  it("deberia ser una funcion",()=>{
+describe("ordenKanto", () => {
+  it("deberia ser una funcion", () => {
 
     expect(typeof ordenKanto).toBe("function");
   });
 });
-it("que retorne el array Kanto", ()=>{
+it("que retorne el array Kanto", () => {
   const genKanto = [{
     generation: {
-      "name":"kanto"
+      "name": "kanto"
     },
   }]
-  const resultadoKanto =[{
+  const resultadoKanto = [{
     generation: {
-      "name":"kanto"
+      "name": "kanto"
     }
   }]
   expect(ordenKanto(genKanto)).toEqual(resultadoKanto)
-  });
+});
 
 /* test filtro johto*/
-describe ("ordenJohto",()=>{
-  it("deberia ser una funcion",()=>{
+describe("ordenJohto", () => {
+  it("deberia ser una funcion", () => {
     expect(typeof ordenJohto).toBe("function");
   });
 });
-it("que retorne el array Johto", ()=>{
+it("que retorne el array Johto", () => {
   const genJohto = [{
     generation: {
-      "name":"johto"
+      "name": "johto"
     },
   }]
-  const resultadoJohto =[{
+  const resultadoJohto = [{
     generation: {
-      "name":"johto"
+      "name": "johto"
     }
   }]
   expect(ordenJohto(genJohto)).toEqual(resultadoJohto)
-  });
+});

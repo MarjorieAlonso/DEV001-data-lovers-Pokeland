@@ -65,7 +65,7 @@ export const ordenKanto = (pokemon) => {
   return kanto;
 }
 export const ordenJohto = (pokemon) => {
-  
+
   const johto = pokemon.filter(e => e.generation.name == "johto")
   return johto;
 }

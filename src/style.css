@@ -231,8 +231,9 @@ li {
 .kanto {
     display: none;
 }
-#myModal{
-    display: none; 
+
+#myModal {
+    display: none;
     background: #1c8834;
     height: 700px;
     width: 700px;
@@ -240,21 +241,21 @@ li {
     overflow: auto;
     margin: auto;
     border-radius: 10%;
-    border-style:dotted;
+    border-style: dotted;
     background-image: url(imagenes/ball.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
-  
-    
+
+
+
 }
 
 
-.close{
-    
+.close {
+
     font-size: 20px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     float: right;
     font-weight: bold;
     height: 25px;
@@ -263,6 +264,5 @@ li {
     cursor: pointer;
     padding: 15px 65px;
     border-radius: 10%;
-    
-}
 
+}
