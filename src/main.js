@@ -100,9 +100,6 @@ const drawCard = (pokemon) => {
 
 for (let i = 0; i < pokemon.length; i++) {
     div.appendChild(drawCard(pokemon[i]))
-    /* console.log(drawCard(pokemon[i])) */
-  /*   pagina += drawCard(pokemon[i]);
-} div.innerHTML = pagina; */
 }
 
 /* buscar pokemon*/
