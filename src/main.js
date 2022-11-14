@@ -63,11 +63,11 @@ const drawCard = (pokemon) => {
 
     return `<div>
     <div class="a ${clase}"> 
-    <div  class="b">
+    <div  class="b" id="${pokemon.num}">
     <li> # ${pokemon.num}</li>
     <img src= "${pokemon.img}"/>
     <li> ${pokemon.name}</li>
-    <button type="button" id="verMas">Ver Mas Info</button>
+    <button type="button" class="verMas">Ver Mas Info</button>
     </div></div>
     </div>`
 }
@@ -76,85 +76,55 @@ for (let i = 0; i < pokemon.length; i++) {
     pagina += drawCard(pokemon[i]);
 }
 div.innerHTML = pagina;
-/* 
-    const contenedor = document.createElement("div")
-    contenedor.classList.add("a")
-    contenedor.classList.add(clase) 
-    const contenedor2 = document.createElement("div")
-    contenedor2.classList.add("b")
-    const numero = document.createElement("li")
-    numero.textContent = (pokemon.num)
-    contenedor2.appendChild(numero)
-    const imagen = document.createElement("img")
-    imagen.setAttribute("src", pokemon.img)
-    contenedor2.appendChild(imagen)
-    const nombre = document.createElement("li")
-    nombre.textContent = (pokemon.name)
-    contenedor2.appendChild(nombre)
-    const crearBoton = document.createElement("button")
-    crearBoton.textContent = ("ver mas info")
-
-    crearBoton.onclick = function () {
-
-        ver.style.display = "block";
-    };
-
-    contenedor2.appendChild(crearBoton)
-    contenedor.appendChild(contenedor2)
 
 
-    return contenedor */
-
-/* 
-const modal1 = document.createElement("section")
-modal1.classList.add("myModal")
-const modal2 = document.createElement("div")
-modal2.classList.add("modal-content")
-const numeroModal = document.createElement("li")
-numeroModal.textContent=(pokemon.num)
-modal2.appendChild(numeroModal)
-const imagenModal = document.createElement("img")
-imagenModal.setAttribute("src", pokemon.img)
-modal2.appendChild(imagenModal)
-const nombreModal = document.createElement("li")
-nombreModal.textContent=(pokemon.name)
-modal2.appendChild(nombreModal)
-
-
-
-
-modal1.appendChild(modal2)
-
-
-drawModal.forEach(pokemon => {
-    myModal.innerHTML += drawModal(pokemon) 
-})
-
-    for (let i = 0; i < pokemon.length; i++) {
-    div.appendChild(drawModal(pokemon[i]))} */
 
 
 /*modal*/
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
+
+let btns = document.getElementsByClassName("verMas");
 
 
-var btn = document.getElementById("verMas");
 
-var span = document.getElementsByClassName("close");
+Array.from(btns).forEach((btn) => {
+    btn.onclick = function (event) {
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+        const guardar = pokemon.filter((elemento) => {
+            return elemento.num == event.target.parentNode.id
+        })[0]
+        /* let prevEvolution = pokemon.evolution["prev-evolution"] ? pokemon.evolution["prev-evolution"][0].name : "no-tiene"
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+        let nextEvolution = pokemon.evolution["next-evolution"] ? pokemon.evolution["next-evolution"][0].name : "no-tiene" */
+        modal.style.display = "block"
+        modal.innerHTML =
+     `<div>
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+    <div  class="visual">
+    <button id="close"> Cerrar </button>
+    <li> # ${guardar.num}</li>
+    <img src= "${guardar.img}"/>
+    <br>
+    <br>
+    <li>nombre :${guardar.name}</li>
+    <li> tipo :${guardar.type}</li>
+    <li> tamaño :${guardar.size.height}</li>
+    <li>peso ${guardar.size.weight}</li>
+    </div>
+    </div> `
+    
+
+
+
+        let close = document.getElementById("close");
+        close.onclick = function () {
+            modal.style.display = "none";
+        }
+
+    }
+})
+
+
 
 /* buscar pokemon*/
 
