@@ -239,30 +239,30 @@ li {
     width: 700px;
     z-index: 1;
     overflow: auto;
-    margin: auto;
     border-radius: 10%;
     border-style: dotted;
     background-image: url(imagenes/ball.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-
-
+    top: 5px;;
+    bottom: 10px;
+    overflow:hidden;
+    position:fixed; 
 
 }
 
 
-.close {
-
+#close {
     font-size: 20px;
-    color: rgb(255, 255, 255);
-    float: right;
-    font-weight: bold;
-    height: 25px;
-    width: 30px;
+    border-color: rgb(59, 59, 59);
+    background-color: rgba(59, 59, 59, 0.603);
+    color: rgba(255, 255, 255, 1);
+    float: center;
+    height: 45px;
+    width: 80px;
     text-align: center;
     cursor: pointer;
-    padding: 15px 65px;
-    border-radius: 10%;
+    border-radius: 30%;
 
 }

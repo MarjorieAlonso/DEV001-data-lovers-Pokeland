@@ -1,27 +1,14 @@
-
 import data from './data/pokemon/pokemon.js';
 import { searchFilter, ordenAzPokemon, ordenZaPokemon, ordenAscendente, ordenDescendente, ordenKanto, ordenJohto } from './data.js'
-
-/* console.log(searchFilter(data.pokemon)) */
 
 /* importar data y donde mostar*/
 const pokemon = data.pokemon;
 
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
-/*modal*/
-let ver= document.getElementById("myModal"); 
-let btn = document.querySelectorAll("#verMas");
-let cerrar = document.getElementById("close");
 
-btn.onclick = function() {
-    ver.style.display = "block";
-    
-  }
-  
-cerrar.onclick = function() {
-    ver.style.display = "none";
-  } 
+
+
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     let clase = "";
@@ -74,47 +61,51 @@ const drawCard = (pokemon) => {
         clase = "grafito"
     }
 
-
-
+    return `<div>
+    <div class="a ${clase}"> 
+    <div  class="b">
+    <li> # ${pokemon.num}</li>
+    <img src= "${pokemon.img}"/>
+    <li> ${pokemon.name}</li>
+    <button type="button" id="verMas">Ver Mas Info</button>
+    </div></div>
+    </div>`
+}
+let pagina = ""
+for (let i = 0; i < pokemon.length; i++) {
+    pagina += drawCard(pokemon[i]);
+}
+div.innerHTML = pagina;
+/* 
     const contenedor = document.createElement("div")
     contenedor.classList.add("a")
-    contenedor.classList.add(clase)
+    contenedor.classList.add(clase) 
     const contenedor2 = document.createElement("div")
     contenedor2.classList.add("b")
     const numero = document.createElement("li")
-    numero.textContent=(pokemon.num)
+    numero.textContent = (pokemon.num)
     contenedor2.appendChild(numero)
     const imagen = document.createElement("img")
     imagen.setAttribute("src", pokemon.img)
     contenedor2.appendChild(imagen)
     const nombre = document.createElement("li")
-    nombre.textContent=(pokemon.name)
+    nombre.textContent = (pokemon.name)
     contenedor2.appendChild(nombre)
     const crearBoton = document.createElement("button")
-    crearBoton.textContent=("ver mas info")
+    crearBoton.textContent = ("ver mas info")
 
-    crearBoton.onclick = function() {
+    crearBoton.onclick = function () {
 
-    ver.style.display = "block";
-};
+        ver.style.display = "block";
+    };
 
     contenedor2.appendChild(crearBoton)
     contenedor.appendChild(contenedor2)
-   
 
-    return contenedor
-}
-for (let i = 0; i < pokemon.length; i++) {
-    div.appendChild(drawCard(pokemon[i]))
-}
-/* Info Modal*/
-btn.onclick = function() {
-    ver.style.display = "block";
-    
-  }
+
+    return contenedor */
+
 /* 
-const drawModal = (pokemon) => {
-
 const modal1 = document.createElement("section")
 modal1.classList.add("myModal")
 const modal2 = document.createElement("div")
@@ -129,8 +120,8 @@ const nombreModal = document.createElement("li")
 nombreModal.textContent=(pokemon.name)
 modal2.appendChild(nombreModal)
 
-ver.style.display = "block";
-}
+
+
 
 modal1.appendChild(modal2)
 
@@ -138,11 +129,35 @@ modal1.appendChild(modal2)
 drawModal.forEach(pokemon => {
     myModal.innerHTML += drawModal(pokemon) 
 })
-*/
-/* for (let i = 0; i < pokemon.length; i++) {
+
+    for (let i = 0; i < pokemon.length; i++) {
     div.appendChild(drawModal(pokemon[i]))} */
 
+
+/*modal*/
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("verMas");
+
+var span = document.getElementsByClassName("close");
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 /* buscar pokemon*/
+
 const search = document.getElementById("Buscar");
 const prueba = document.getElementById("prueba");
 prueba.addEventListener("click", () => {
@@ -225,15 +240,5 @@ selectElement.addEventListener('change', (event) => {
         pokeJohto.forEach(Johto => {
             div.innerHTML += drawCard(Johto)
         })
-
     }
 })
-
-
-
-
-
-
-
-
-
