@@ -1,4 +1,45 @@
 # Data Lovers
+Bienvenidos a "Pokeland"
+
+Los principales usuarios de nuestra pagina, son niños y adultos que quieran empezar a conocer el mundo pokemon.
+
+El objetivo principal es que los usuarios puedan ver a través de nuestra interfaz todos los pokemones de las distintas regiones ( kanto y johnto)
+
+Los datos relevantes que queremos que se muestren en la interfaz son los pokemon enumerados , donde al hacer clic en cada uno de ellos se despliegue las distintas características de este (evoluciones, tipo, etc) porque al hacer una encuesta de consumidores , nos enfocamos en saber lo que realmente quería el usuario.
+
+Historias de usuarios
+
+Para hacer un perfil que las personas necesitaban, hicimos una encuesta que nos arrojo los siguientes datos:
+
+- De todas las personas encuestadas, el 55% de las personas conocían el mundo pokemon y un 45% no
+
+- De las personas que conocían el mundo pokemon, un 86% dijo que solo era a nivel amateur
+
+- En promedio , un 56% dijo que querían saber los nombres de los distintos pokemon que existen, y un 44% deseaba saber las características de cada uno.
+
+Por lo cual nos enfocamos en hacer una interfaz dinamica que ayude a los usuarios a encontrar sus respuestas.
+
+Prototipo
+
+Al hacer la interfaz, nos centramos en hacerla fácil para el usuario, nuestro primer boceto fue echo en papel:
+
+![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/prototipo%20baja%20fidelidad.jpeg)
+
+Luego, tomamos las 3 HU que logramos recolectar de nuestra encuesta e hicimos un prototipo de alta fidelidad en figma
+
+![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu1.jpeg)
+
+En la primera interfaz, nos concentramos en la HU1 , que es para que los usuarios puedan ver en solo una pagina todos los pokemones desde el numero 1 hasta el 251.
+
+![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu2.jpeg)
+
+En la segunda, podemos ver los filtros desplegables que van a estar en nuestra pagina
+
+![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu3.jpeg)
+
+En la tercera interfaz, se muestra las distintas caracteristicas de cada pokemon.
+
+
 
 ## Índice
 

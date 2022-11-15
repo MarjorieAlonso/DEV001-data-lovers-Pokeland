@@ -10,7 +10,6 @@ header {
     background-color: rgba(241, 244, 46, 0.811);
     text-align: center;
     padding: 15px;
-
 }
 
 .contenedor {
@@ -24,8 +23,6 @@ header {
     max-width: 100%;
     box-sizing: border-box;
     padding: 20px;
-
-
 }
 
 .contenido {
@@ -34,6 +31,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 40px;
+   
 }
 
 h1 {
@@ -68,7 +66,6 @@ h4 {
     justify-content: center;
     flex-direction: column;
     padding: 40px;
-
 }
 
 #filtro {
@@ -80,13 +77,11 @@ h4 {
     margin-top: 5px;
     margin-left: 180px;
     justify-content: space-between;
-
 }
 
 #filtrar {
     background-color: #b7b2b2;
     text-align: center;
-
 }
 
 #search {
@@ -110,7 +105,6 @@ h4 {
 footer {
     display: flex;
     justify-content: space-around;
-
 }
 
 #root {
@@ -143,25 +137,21 @@ footer {
 .b {
     margin-top: 20px;
     text-align: center;
-    color:white;
+    color: white;
     text-shadow: 8px grey;
-
 }
-.visual{
+
+.visual {
     margin-top: 20px;
     text-align: center;
-    color:black;
+    color: black;
     text-shadow: 8px grey;
     font-size: 30px;
     margin-bottom: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
-
-
-#verMas {
+.verMas {
     border-radius: 80%;
     height: auto;
     width: auto;
@@ -174,13 +164,10 @@ footer {
 
 li {
     list-style: none;
-    
-
 }
 
 .azulClaro {
     background-color: #1b61ca;
-
 }
 
 .naranja {
@@ -249,21 +236,20 @@ li {
 
 #myModal {
     display: none;
-    height: 400px;
+    height: 500px;
     width: 400px;
     z-index: 1;
     border-radius: 10%;
     border-style: dotted;
     background-image: url(imagenes/ball.png);
     background-size: cover;
-    background-repeat: round ;
+    background-repeat: round;
     text-align: center;
-    top: 5px;;
+    top: 15%;
     bottom: 10px;
-    overflow:hidden;
-    position:fixed; 
-   
-
+    overflow: hidden;
+    position: fixed;
+    margin-left: 30%;
 }
 
 
@@ -278,5 +264,12 @@ li {
     text-align: center;
     cursor: pointer;
     border-radius: 30%;
-
+}
+#foto{
+    height: 50%;;
+    width: 45%;
+}
+.zoom{
+    font-size: 50px;
+    text-shadow: white ;
 }

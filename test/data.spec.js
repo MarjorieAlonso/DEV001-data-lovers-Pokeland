@@ -1,5 +1,6 @@
 /* import { TestWatcher } from 'jest'; */
 import { searchFilter, ordenAzPokemon, ordenZaPokemon, ordenAscendente, ordenDescendente, ordenKanto, ordenJohto } from '../src/data.js';
+
 /*test search*/
 describe('searchFilter', () => {
   it('filtra por nombre de pokemon', () => {
@@ -23,6 +24,7 @@ it('Que retorne el array ordenado de la A-Z', () => {
     { name: "bulbasaur" }, { name: "abra" }, { name: "charmander" }
   ]
   const resultado = [{ name: "abra" }, { name: "bulbasaur" }, { name: "charmander" }]
+  
   expect(ordenAzPokemon(arrAsc)).toEqual(resultado)
 });
 
@@ -38,6 +40,7 @@ it('Que retorne el array ordenado de la Z-A', () => {
     { name: "bulbasaur" }, { name: "abra" }, { name: "charmander" }
   ]
   const resultadoDesc = [{ name: "charmander" }, { name: "bulbasaur" }, { name: "abra" }]
+  
   expect(ordenZaPokemon(arrDesc)).toEqual(resultadoDesc)
 });
 
@@ -54,6 +57,7 @@ it('Que retorne el array ordenado de 1-251', () => {
     { num: "1" }, { num: "66" }, { num: "12" }
   ]
   const resultadoAscent = [{ num: "1" }, { num: "12" }, { num: "66" }]
+  
   expect(ordenAscendente(arrAscent)).toEqual(resultadoAscent)
 });
 
@@ -70,6 +74,7 @@ it('Que retorne el array ordenado de 251-1', () => {
     { num: "1" }, { num: "66" }, { num: "12" }
   ]
   const resultadoDescent = [{ num: "66" }, { num: "12" }, { num: "1" }]
+  
   expect(ordenDescendente(arrDescent)).toEqual(resultadoDescent)
 });
 
@@ -91,6 +96,7 @@ it("que retorne el array Kanto", () => {
       "name": "kanto"
     }
   }]
+  
   expect(ordenKanto(genKanto)).toEqual(resultadoKanto)
 });
 
@@ -111,5 +117,6 @@ it("que retorne el array Johto", () => {
       "name": "johto"
     }
   }]
+  
   expect(ordenJohto(genJohto)).toEqual(resultadoJohto)
 });

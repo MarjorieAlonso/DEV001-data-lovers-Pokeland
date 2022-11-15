@@ -7,8 +7,6 @@ const pokemon = data.pokemon;
 /*console.log("pokemon", pokemon);*/
 const div = document.getElementById("root");
 
-
-
 /*cartas de cada pokemon*/
 const drawCard = (pokemon) => {
     let clase = "";
@@ -77,14 +75,10 @@ for (let i = 0; i < pokemon.length; i++) {
 }
 div.innerHTML = pagina;
 
-
-
-
 /*modal*/
 let modal = document.getElementById("myModal");
 
 let btns = document.getElementsByClassName("verMas");
-
 
 
 Array.from(btns).forEach((btn) => {
@@ -93,29 +87,23 @@ Array.from(btns).forEach((btn) => {
         const guardar = pokemon.filter((elemento) => {
             return elemento.num == event.target.parentNode.id
         })[0]
-        /* let prevEvolution = pokemon.evolution["prev-evolution"] ? pokemon.evolution["prev-evolution"][0].name : "no-tiene"
-
-        let nextEvolution = pokemon.evolution["next-evolution"] ? pokemon.evolution["next-evolution"][0].name : "no-tiene" */
+        
         modal.style.display = "block"
         modal.innerHTML =
      `<div>
 
     <div  class="visual">
     <button id="close"> Cerrar </button>
-    <li> # ${guardar.num}</li>
-    <img src= "${guardar.img}"/>
     <br>
-    <br>
-    <li>nombre :${guardar.name}</li>
+    <li class="zoom"> # ${guardar.num} </li>
+    <img src= "${guardar.img}" id="foto"/>
+    <li class="zoom">${guardar.name}</li>
     <li> tipo :${guardar.type}</li>
     <li> tamaño :${guardar.size.height}</li>
     <li>peso ${guardar.size.weight}</li>
     </div>
     </div> `
     
-
-
-
         let close = document.getElementById("close");
         close.onclick = function () {
             modal.style.display = "none";
@@ -125,9 +113,7 @@ Array.from(btns).forEach((btn) => {
 })
 
 
-
 /* buscar pokemon*/
-
 const search = document.getElementById("Buscar");
 const prueba = document.getElementById("prueba");
 prueba.addEventListener("click", () => {
@@ -192,8 +178,6 @@ selectElement.addEventListener('change', (event) => {
 
         let pokeKanto = ordenKanto(pokemon)
 
-        /* console.log(pokeKanto); */
-
         div.innerHTML = ""
         pokeKanto.forEach(Kanto => {
             div.innerHTML += drawCard(Kanto)
@@ -203,8 +187,6 @@ selectElement.addEventListener('change', (event) => {
     else if (event.target.value === ("johto")) {
 
         let pokeJohto = ordenJohto(pokemon)
-
-        /* console.log(pokeJohto); */
 
         div.innerHTML = ""
         pokeJohto.forEach(Johto => {
