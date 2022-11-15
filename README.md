@@ -23,21 +23,21 @@ Prototipo
 
 Al hacer la interfaz, nos centramos en hacerla fácil para el usuario, nuestro primer boceto fue echo en papel:
 
-![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/prototipo%20baja%20fidelidad.jpeg)
+![prototipo baja fidelidad](https://user-images.githubusercontent.com/114014708/201970062-9ccbb02f-a7bb-4dba-a142-b8bb17fecf4f.jpeg)
+
 
 Luego, tomamos las 3 HU que logramos recolectar de nuestra encuesta e hicimos un prototipo de alta fidelidad en figma
 
-![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu1.jpeg)
-
 En la primera interfaz, nos concentramos en la HU1 , que es para que los usuarios puedan ver en solo una pagina todos los pokemones desde el numero 1 hasta el 251.
 
-![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu2.jpeg)
+![hu1](https://user-images.githubusercontent.com/114014708/201970252-e96cbcbf-9317-4bc1-ac5e-c04aafda62c6.jpeg)
 
 En la segunda, podemos ver los filtros desplegables que van a estar en nuestra pagina
-
-![Alt text](../../../../../../../../C:/Users/Laboratoria/Desktop/Romina/Laboratoria/Proyecto%202/DEV001-data-lovers-Pokeland/src/imagenes/hu3.jpeg)
+![hu2](https://user-images.githubusercontent.com/114014708/201970297-0e609153-9c27-4b1c-8e5d-a1dc19204fe5.jpeg)
 
 En la tercera interfaz, se muestra las distintas caracteristicas de cada pokemon.
+
+![hu3](https://user-images.githubusercontent.com/114014708/201970315-9dab6d09-b473-4bcd-9d1e-edeb5cde44c6.jpeg)
 
 
 
